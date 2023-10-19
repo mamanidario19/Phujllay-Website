@@ -18,7 +18,7 @@ function Navbar() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/about">Acerda de</Link>
+            <Link to="/about">Acerca de</Link>
           </li>
           <li>
             <Link to="/team">Equipo</Link>
