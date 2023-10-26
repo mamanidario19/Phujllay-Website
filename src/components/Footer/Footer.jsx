@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
-import gmail from '../../assets/Social_media_icon/logo_gmail.png';
-import insta from '../../assets/Social_media_icon/logo_instagram.png';
-import tiktok from '../../assets/Social_media_icon/logo_tiktok.png';
-import twitter from '../../assets/Social_media_icon/logo_twitter_x.png';
+import gmail from '../../assets/SocialMediaFooter/logo_gmail.png';
+import insta from '../../assets/SocialMediaFooter/logo_instagram.png';
+import tiktok from '../../assets/SocialMediaFooter/logo_tiktok.png';
+import twitter from '../../assets/SocialMediaFooter/logo_twitter_x.png';
 
 const Footer = () => {
   return (
