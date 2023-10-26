@@ -6,6 +6,7 @@ import Development from './routes/Development/Development';
 import Roadmap from './routes/Roadmap/Roadmap';
 import Team from './routes/Team/Team';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
         <Route path='/Roadmap' element={<Roadmap />} />
         <Route path='/Team' element={<Team />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
