@@ -118,20 +118,22 @@ const Team = () => {
 
   return (
     <div className="team">
-      {teamMembers.map((member, index) => (
-        <div className="member-card" key={index}>
-          <img src={member.img} alt={member.nombreCompleto} />
-          <h2>{member.nombreCompleto}</h2>
-          <p>{member.rol}</p>
-          <p>{member.descripcion}</p>
-          <div className="contact-card">
-            <a href={member.linkedin}>LinkedIn</a>
-            <a href={`mailto:${member.email}`}>Email</a>
-            <a href={member.github}>GitHub</a>
+      <div className="member-cards">
+        {teamMembers.map((member, index) => (
+          <div className="member-card" key={index}>
+            <img src={member.img} alt={member.nombreCompleto} />
+            <h2>{member.nombreCompleto}</h2>
+            <p>{member.rol}</p>
+            <p>{member.descripcion}</p>
+            <div className="contact-card">
+              <a href={member.linkedin}>LinkedIn</a>
+              <a href={`mailto:${member.email}`}>Email</a>
+              <a href={member.github}>GitHub</a>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
-}
+};
 export default Team;
