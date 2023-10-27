@@ -9,15 +9,15 @@ const Footer = () => {
   return (
     <footer>
       <div className='footer-name'>
-        <h3>Nombre del Equipo</h3>
+        <h3>Phujllay Team</h3>
       </div>
       <div className='footer-social-media'>
         <h4>Contact Us: </h4>
         <div className='social-media'>
-          <a href=''><img src={gmail} alt='Gmail'/></a>
-          <a href=''><img src={insta} alt='Instagram'/></a>
-          <a href=''><img src={tiktok} alt='TikTok'/></a>
-          <a href=''><img src={twitter} alt='Twitter'/></a>
+          <a href=''><img src={gmail} alt='Gmail' /></a>
+          <a href=''><img src={insta} alt='Instagram' /></a>
+          <a href=''><img src={tiktok} alt='TikTok' /></a>
+          <a href=''><img src={twitter} alt='Twitter' /></a>
         </div>
       </div>
       <div className='footer-copyright'>
