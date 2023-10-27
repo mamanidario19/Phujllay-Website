@@ -19,4 +19,11 @@
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  color: #C42E2F;
+  ;
+}
+
+.sinopsis p {
+  line-height: 1.8;
+  /* Puedes ajustar este valor según tus preferencias */
 }

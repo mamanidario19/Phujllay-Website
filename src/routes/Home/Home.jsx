@@ -1,6 +1,6 @@
 import './Home.css';
 import React from 'react';
-import backimg from '../../assets/placeholder_home-image.png';
+import backimg from '../../assets/Phujllay.png';
 
 const Home = () => {
   return (
