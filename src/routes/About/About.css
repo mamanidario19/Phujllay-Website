@@ -19,11 +19,11 @@ body {
 }
 
 .features-section {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
     margin-top: 20px;
     background-color: #f6f0d6;
+    padding-bottom: 20px;
 }
 
 .features-section h2 {
@@ -33,7 +33,7 @@ body {
 
 .feature-box {
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 20px;
     margin-top: 20px;

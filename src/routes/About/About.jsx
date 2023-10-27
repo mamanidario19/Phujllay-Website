@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.css';
-import aventuraImg from '../../assets/image-placeholder-500x500.jpg';
-import culturaImg from '../../assets/image-placeholder-500x500.jpg';
-import carnavalImg from '../../assets/image-placeholder-500x500.jpg';
+import aventuraImg from '../../assets/concept-art.png';
+import culturaImg from '../../assets/noa.jpg';
+import carnavalImg from '../../assets/carnaval.jpg';
 
 const About = () => {
   return (
