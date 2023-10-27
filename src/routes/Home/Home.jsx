@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div className="home-container">
 
-      <div className="background-image">
+      <div className="background-image"><div className="image-overlay">
+        <h1>PHUJLLAY</h1>
+      </div>
         <img src={backimg} alt="Imagen principal de Inicio" />
       </div>
 

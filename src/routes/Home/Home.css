@@ -1,3 +1,8 @@
+body {
+  font-family: Nerko One;
+  color: #F6F0D6;
+}
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +15,7 @@
   background-position: center;
   text-align: center;
   padding: 20px;
+  opacity: 0.75;
 }
 
 .sinopsis {
@@ -26,4 +32,29 @@
 .sinopsis p {
   line-height: 1.8;
   /* Puedes ajustar este valor según tus preferencias */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.image-overlay h1 {
+  color: white;
+  /* Ajusta el color del texto según tus preferencias */
+  font-size: 7em;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  /* Agrega otros estilos de texto según tus preferencias */
+  color: #F6F0D6;
+  text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  /* Agrega un contorno al texto */
+  /* Ajusta otros estilos de texto según tus preferencias */
+
 }
