@@ -8,12 +8,12 @@
     TITULO
     ---------------------------------
 */
-.title-box {
+.title_box {
     display: flex;
     align-items: center;
 }
 
-hr {
+.title_box .hr_roadmap {
     flex: 1;
     border: 2px solid #F18523;
 }
@@ -34,7 +34,6 @@ hr {
     margin: 0;
     padding: 20px 0;
 }
-
 /**
     ---------------------------------
 */
@@ -56,7 +55,6 @@ hr {
     position: absolute;
     z-index: 0;
 }
-
 /**
     ---------------------------------
 */
@@ -75,7 +73,7 @@ hr {
     z-index: 1;
 }
 
-img {
+.imagen_roadmap {
     max-width: 500px;
     height: 250px;
     border: 1px solid black;
