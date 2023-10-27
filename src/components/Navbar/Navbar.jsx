@@ -16,9 +16,11 @@ function Navbar() {
           <li>
             <Link to="/team">Equipo</Link>
           </li>
+          {/*
           <li>
             <Link to="/development">Desarrollo</Link>
           </li>
+          */}
           <li>
             <Link to="/roadmap">Roadmap</Link>
           </li>
