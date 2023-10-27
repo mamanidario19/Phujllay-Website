@@ -15,7 +15,11 @@ const About = () => {
         </p>
       </section>
       <section className="features-section">
-        <h2>Características principales</h2>
+        <div className="title-box">
+          <hr className="line_left" />
+          <h1 className="title">Caracteristicas principales</h1>
+          <hr className="line_right" />
+        </div>
         <div className="feature-box">
           <div className="feature-content">
             <img src={aventuraImg} alt="Imagen de Aventura" />

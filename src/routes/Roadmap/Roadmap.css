@@ -33,6 +33,7 @@ hr {
     align-items: center;
     margin: 0;
     padding: 20px 0;
+    color: #F18523;
 }
 
 /**
@@ -101,6 +102,7 @@ img {
     padding-right: 50px;
     color: white;
 }
+
 /**
     ---------------------------------
 */
