@@ -3,13 +3,32 @@
   justify-content: center;
   background-color: #f6f0d6;
   width: 100%;
-  padding: 20px;
+  
 }
 .member-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+/* Estilos para la imagen del equipo */
+.equipo-image-container {
+  text-align: center; 
+  padding: 5% ;
+}
+
+.equipo-image {
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 5px; 
+  margin-bottom: 20px;
+}
+
+.equipo-description {
+  font-size: 18px;
+  color: #9d8878;
+  margin-top: 10px;
+}
+
 /* Estilo para los miembros del equipo */
 .member-card {
   

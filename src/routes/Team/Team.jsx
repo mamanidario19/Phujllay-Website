@@ -11,6 +11,7 @@ import jonathan from '../../assets/Fotos_Perfil/Jonathan.JPG'
 import nataniel from '../../assets/Fotos_Perfil/Nataniel.JPG'
 import ariel from '../../assets/Fotos_Perfil/Vega.JPG'
 import ezequiel from '../../assets/Fotos_Perfil/Ezequiel.png'
+import teamImage from '../../assets/Fotos_Perfil/Team.JPG'
 
 const Team = () => {
 
@@ -129,6 +130,7 @@ const Team = () => {
 
   return (
     <>
+    <div className="team-image-section">
       <div className="title_box">
         <hr className="line_left hr_roadmap" />
         <h1 className="title">EQUIPO</h1>
@@ -136,10 +138,24 @@ const Team = () => {
       </div>
 
       <div className="team">
+        <div className="equipo-image-container">
+        <img
+            className="equipo-image"
+            src={teamImage}
+            alt="Equipo"
+          />
+          <div className="equipo-description">
+            <p>¡Phujllay Team!</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="members-section">
         <div className="member-cards">
           {teamMembers.map((member, index) => (
             <div className="member-card" key={index}>
-              <img className='image_perfil' src={member.img} alt={member.nombreCompleto} />
+              <img className="image_perfil" src={member.img} alt={member.nombreCompleto} />
               <h2>{member.nombreCompleto}</h2>
               <p>{member.rol}</p>
               <p>{member.descripcion}</p>
@@ -151,6 +167,8 @@ const Team = () => {
             </div>
           ))}
         </div>
+        </div>
+
       </div>
     </>
   );
