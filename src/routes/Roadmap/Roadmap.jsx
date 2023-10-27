@@ -7,10 +7,10 @@ const Roadmap = () => {
   return (
     <>
       <div className='contenedor'>
-        <div className="title-box">
-          <hr className="line_left" />
+        <div className="title_box">
+          <hr className="line_left hr_roadmap" />
           <h1 className="title">ROADMAP</h1>
-          <hr className="line_right" />
+          <hr className="line_right hr_roadmap" />
         </div>
 
         <div className='roadmap'>
