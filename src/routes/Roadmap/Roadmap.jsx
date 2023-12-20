@@ -1,5 +1,5 @@
-import { Card } from '../../components/Card/Card';
-import { cards } from '../../utils/cards';
+import { Card } from '../../components/Card/RoadmapCard/RoadmapCard';
+import { cards } from '../../utils/roadmapCards';
 import './Roadmap.css';
 import React from 'react';
 
