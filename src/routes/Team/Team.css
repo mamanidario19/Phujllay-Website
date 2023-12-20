@@ -1,0 +1,89 @@
+.team {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f0d6;
+  width: 100%;
+  
+}
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Estilos para la imagen del equipo */
+.equipo-image-container {
+  text-align: center; 
+  padding: 5% ;
+}
+
+.equipo-image {
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 5px; 
+  margin-bottom: 20px;
+}
+
+.equipo-description {
+  font-size: 18px;
+  color: #9d8878;
+  margin-top: 10px;
+}
+
+/* Estilo para los miembros del equipo */
+.member-card {
+  
+  background-color: #e6d8bd;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #d9d9d9;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.member-card img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.member-card h2 {
+  font-size: 24px;
+  color: #9d8878;
+  margin: 10px 0;
+}
+
+.member-card p {
+  font-size: 16px;
+  color: #9d8878;
+  margin: 10px 0;
+}
+
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.contact-card a {
+  padding: 5px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9d8878;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+}
+
+.contact-card a:hover {
+  background-color: #d9d9d9;
+}
+
+/*
+  IMAGE
+*/
+.image_perfil {
+  width: 300px;
+  height: 200px;
+}

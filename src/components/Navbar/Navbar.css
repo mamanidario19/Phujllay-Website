@@ -1,56 +1,31 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #ff7300;
+  background-color: #71443F;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
-.project-logo {
-  display: flex;
-  align-items: center;
-}
-
-.project-logo img {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-}
-
-.project-logo span {
-  font-size: 30px;
-  font-weight: bold;
-  color: #181818;
-}
-
-.navbar-right .navbar-links {
+.navbar-links ul {
   list-style: none;
   padding: 0;
   display: flex;
-}
-
-.navbar-right .navbar-links li {
-  margin-right: 20px;
-}
-
-.navbar-right .navbar-links a {
-  text-decoration: none;
-  color: #181818;
-  font-weight: bold;
-  font-size: 20px;
+  justify-content: space-around;
+  /* Distribuir los elementos de forma equitativa */
+  width: 100%;
+  /* Ajustar el ancho al 100% */
 }
 
 .navbar-links li {
-  margin-right: 20px;
+  margin-right: 150px;
   transition: background-color 0.3s;
 }
 
-.navbar-links li:hover {
-  background-color: #d93131;
+.navbar-links li a {
+  text-decoration: none;
+  color: #F6F0D6;
+  ;
+  font-weight: bold;
+  font-size: 20px;
 }
