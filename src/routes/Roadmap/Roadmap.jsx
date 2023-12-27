@@ -1,29 +1,35 @@
-import { Card } from '../../components/Card/Card';
-import { cards } from '../../utils/cards';
+import { RoadmapCard } from '../../components/Card/RoadmapCard/RoadmapCard';
+import { cards } from '../../utils/roadmapCards';
 import './Roadmap.css';
-import React from 'react';
+import imgrocas from '../../assets/Roadmap/Rocas-Silueta.png';
+import React, { useEffect } from 'react';
 
 const Roadmap = () => {
   return (
     <>
-      <div className='contenedor'>
-        <div className="title_box">
-          <hr className="line_left hr_roadmap" />
-          <h1 className="title">ROADMAP</h1>
-          <hr className="line_right hr_roadmap" />
-        </div>
+      <div className='roadmap-container'>
+        <section className='roadmap-title-container'>
+          <h1 className="roadmap-title">ROADMAP</h1>
+        </section>
 
-        <div className='roadmap'>
-          <div className="vertical-line"></div>
+        <section className='roadmap-content-container'>
+          <div className='roadmap-content-poste-left'></div>
+          <div className='roadmap-content-poste-right'></div>
 
-          {cards.map((card) => (
-            <Card key={card.id}
-              image={card.image}
-              title={card.title}
-              date={card.date}
-              description={card.description} />
-          ))}
-        </div>
+          <div className='roadmap-content-cards'>
+            {cards.map((card) => (
+              <RoadmapCard key={card.id}
+                image={card.image}
+                title={card.title}
+                date={card.date}
+                description={card.description} />
+            ))}
+          </div>
+
+          <img src={imgrocas} alt="Rocas Siluetas" className='img-rocas' />
+        </section>
+
+        
       </div>
     </>
   )
