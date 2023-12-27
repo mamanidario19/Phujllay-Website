@@ -10,51 +10,51 @@ import foto_inicio from '../assets/Roadmap/foto_iniciojuego.png';
 export const cards = [
   {
     id: 1,
-    image: foto_idea,
+    image: foto_idea,    
     title: "Finalizacion idea inicial",
-    date: "20/03/2022",
-    description: "Descripción"
+    date: "Marzo 03, 2023",      
+    description: "Descripción"       
   },
   {
     id: 2,
     image: foto_aprobacion,
     title: "Aprobación del ARN",
-    date: "02/08/2022",
+    date: "Agosto 02, 2023",
     description: "Descripción"
   },
   {
     id: 3,
     image: foto_inicio,
     title: "Inicio del desarrollo del VJ",
-    date: "14/09/2022",
+    date: "Septiembre 14, 2023",
     description: "Descripción"
   },
   {
     id: 4,
     image: eva_image,
     title: "Viaje al EVA",
-    date: "20/09/2022",
+    date: "Septiembre 20, 2023",
     description: "Descripción"
   },
   {
     id: 5,
     image: foto_entrega,
     title: "Entrega de equipamientos",
-    date: "25/10/2022",
+    date: "Octubre 25, 2023",
     description: "Descripción"
   },
   {
     id: 6,
     image: foto_image,
     title: "Fotos profesionales",
-    date: "26/10/2022",
+    date: "Octubre 10, 2023",
     description: "Descripción"
   },
   {
     id: 7,
     image: foto_charla,
     title: "Charla estudiantes-egresados",
-    date: "27/10/2022",
+    date: "Octubre 27, 2023",
     description: "Descripción"
   },
   {

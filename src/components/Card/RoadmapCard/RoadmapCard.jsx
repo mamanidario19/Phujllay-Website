@@ -1,10 +1,12 @@
-export const Card = ({ image, title, date, description }) => {
+import './RoadmapCard.css';
+
+export const RoadmapCard = ({ title, date }) => {
     return (
-        <div className="card">
-            <img className="imagen_roadmap" src={image} alt={title} />
-            <h2>{title}</h2>
-            <p>{date}</p>
-            <p>{description}</p>
-        </div>
+        <article className="roadmap-card">
+            <a href="#" className='roadmap-card-link'>                
+                <h2 className="roadmap-card-title">{title}</h2>
+                <h3 className="roadmap-card-date">{date}</h3>
+            </a>
+        </article>
     );
 };
