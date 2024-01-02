@@ -9,59 +9,59 @@ import foto_inicio from '../assets/Roadmap/foto_iniciojuego.png';
 
 export const cards = [
   {
-    id: 1,
-    image: foto_idea,    
-    title: "Finalizacion idea inicial",
-    date: "Marzo 03, 2023",      
-    description: "Descripción"       
+    id: 1,        
+    title: "FINALIZACION IDEA INICIAL",
+    date: "MARZO 03, 2023",      
+    description: "La idea inicial finalizo con el conecpto del carnaval",
+    images: [foto_idea]   
   },
   {
     id: 2,
     image: foto_aprobacion,
-    title: "Aprobación del ARN",
-    date: "Agosto 02, 2023",
+    title: "APROBACIÓN DEL PROYECTO",
+    date: "AGOSTO 02, 2023",
     description: "Descripción"
   },
   {
     id: 3,
     image: foto_inicio,
-    title: "Inicio del desarrollo del VJ",
-    date: "Septiembre 14, 2023",
+    title: "INICIO DEL DESARROLLO",
+    date: "SEPTIEMBRE 14, 2023",
     description: "Descripción"
   },
   {
     id: 4,
     image: eva_image,
-    title: "Viaje al EVA",
-    date: "Septiembre 20, 2023",
+    title: "VIAJE AL EVA",
+    date: "SEPTIEMBRE 20, 2023",
     description: "Descripción"
   },
   {
     id: 5,
     image: foto_entrega,
-    title: "Entrega de equipamientos",
-    date: "Octubre 25, 2023",
+    title: "ENTREGA DE EQUIPAMIENTO",
+    date: "OCTUBRE 25, 2023",
     description: "Descripción"
   },
   {
     id: 6,
     image: foto_image,
-    title: "Fotos profesionales",
-    date: "Octubre 10, 2023",
+    title: "FOTOS PROFESIONALES",
+    date: "OCTUBRE 10, 2023",
     description: "Descripción"
   },
   {
     id: 7,
     image: foto_charla,
-    title: "Charla estudiantes-egresados",
-    date: "Octubre 27, 2023",
+    title: "CHARLA A INGRESANTES",
+    date: "OCTUBRE 27, 2023",
     description: "Descripción"
   },
   {
     id: 8,
     image: default_image,
     title: "Continuara",
-    date: "Fecha",
+    date: "FECHA",
     description: "Descripción"
   }
 ]

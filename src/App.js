@@ -4,9 +4,11 @@ import Home from './routes/Home/Home';
 import About from './routes/About/About';
 import Development from './routes/Development/Development';
 import Roadmap from './routes/Roadmap/Roadmap';
+import Roadmap_Info from './routes/Roadmap_Info/Roadmap_Info';
 import Team from './routes/Team/Team';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
         <Route path='/About' element={<About />} />
         <Route path='/Development' element={<Development />} />
         <Route path='/Roadmap' element={<Roadmap />} />
+        <Route path='/Roadmap_Info/:title/:images/:description' element={<Roadmap_Info />} />
         <Route path='/Team' element={<Team />} />
       </Routes>
       <Footer />

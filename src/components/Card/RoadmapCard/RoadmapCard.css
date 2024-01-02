@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Single+Day&display=swap');
+
 .roadmap-card {  
+  font-family: 'Luckiest Guy', cursive;
   text-align: center;
   width: 90%;
   margin: 40px auto;
@@ -11,9 +14,11 @@
   display: block;
   padding: 5px 0;
 }
+
 .roadmap-card-title,
-.roadmap-card-date {
-  transition: transform 0.5s ease;  
+.roadmap-card-date {  
+  transition: transform 0.5s ease;
+  font-weight: 400;
 }
 
 /**
@@ -46,6 +51,7 @@
 .roadmap-card:nth-child(odd):hover,
 .roadmap-card:nth-child(even):hover {
   background-color: #F24726;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .roadmap-card:nth-child(odd):hover
@@ -53,7 +59,6 @@
 .roadmap-card:nth-child(even):hover  
 .roadmap-card-date {  
   transform: scale(1.05, 1.05);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /**
