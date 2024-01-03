@@ -9,11 +9,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
-/* Estilos para la imagen del equipo */
-.equipo-image-container {
-  text-align: center; 
-  padding: 5% ;
+.member-card img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .equipo-image {
@@ -23,30 +26,19 @@
   margin-bottom: 20px;
 }
 
-.equipo-description {
-  font-size: 18px;
-  color: #9d8878;
-  margin-top: 10px;
-}
-
 /* Estilo para los miembros del equipo */
 .member-card {
   
   background-color: #e6d8bd;
   width: 100%;
   max-width: 400px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #000000;
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
 }
 
-.member-card img {
-  max-width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
 
 .member-card h2 {
   font-size: 24px;
@@ -84,6 +76,8 @@
   IMAGE
 */
 .image_perfil {
-  width: 300px;
-  height: 200px;
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
