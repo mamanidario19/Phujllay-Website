@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #71443F;
+    color: #fff;
+
+}
+.footer-name {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.footer-social-media h4 {
+    font-size: 13px;
+}
+
+.social-media {
+    height: 50px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+}
