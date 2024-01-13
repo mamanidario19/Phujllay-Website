@@ -1,0 +1,100 @@
+.roadmap-card {  
+  text-align: center;
+  width: 90%;
+  margin: 40px auto;
+  transition: transform 0.5s ease;  
+}
+
+.roadmap-card-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 0;
+}
+.roadmap-card-title,
+.roadmap-card-date {
+  transition: transform 0.5s ease;  
+}
+
+/**
+  ITEMS PARES
+*/
+.roadmap-card:nth-child(odd) {
+  background-color: #CE9965;
+  max-width: 700px;
+}
+
+.roadmap-card:nth-child(odd):hover {
+  transform: scale(1.05, 1.05) rotate(1deg);
+}
+
+/**
+  ITEMS IMPARES
+*/
+.roadmap-card:nth-child(even) {
+  background-color: #8B4513;
+  max-width: 790px;
+}
+
+.roadmap-card:nth-child(even):hover {
+  transform: scale(1.05, 1.05) rotate(-1deg);
+}
+
+/**
+  AMBOS ITEMS
+*/
+.roadmap-card:nth-child(odd):hover,
+.roadmap-card:nth-child(even):hover {
+  background-color: #F24726;
+}
+
+.roadmap-card:nth-child(odd):hover
+.roadmap-card-date,
+.roadmap-card:nth-child(even):hover  
+.roadmap-card-date {  
+  transform: scale(1.05, 1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/**
+  MEDIA
+*/
+@media (min-width: 361px) {
+  .roadmap-card-title {
+    font-size: 30px;
+  }  
+
+  .roadmap-card:nth-child(odd) {
+    width: 80%;
+  }
+
+  .roadmap-card:nth-child(even) {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .roadmap-card-title {
+    font-size: 40px;
+  }
+
+  .roadmap-card:nth-child(odd)
+  .roadmap-card-date {
+    font-size: 25px;
+    text-align: right;
+    margin-right: 40px;
+  }
+
+  .roadmap-card:nth-child(even)
+  .roadmap-card-date {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .roadmap-card-title {
+    font-size: 50px;
+  }
+}
