@@ -8,7 +8,7 @@ const teamData = [
     instagram: ' ',
     facebook: ' ',
     twitter: ' ',
-    img: require('../assets/Fotos_Perfil/Adolfo.jpg'),
+    img: require('../assets/Fotos_Perfil/Adolfo.JPG'),
     },
     {
     nombreCompleto: 'Agustin Ponce',
@@ -19,7 +19,7 @@ const teamData = [
     instagram: ' ',
     facebook: ' ',
     twitter: ' ',
-    img: require('../assets/Fotos_Perfil/Agustin.jpg'), 
+    img: require('../assets/Fotos_Perfil/Agustin.JPG'), 
     },
     {
     nombreCompleto: "Aylen Rodriguez",
@@ -30,7 +30,7 @@ const teamData = [
     instagram: ' ',
     facebook: ' ',
     twitter: ' ',
-    img: require('../assets/Fotos_Perfil/Aylen.jpg'), 
+    img: require('../assets/Fotos_Perfil/Aylen.JPG'), 
     },
     {
     nombreCompleto: 'Dario Mamani',
@@ -41,7 +41,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: ' ',
-    img: require('../assets/Fotos_Perfil/Dario.jpg'), 
+    img: require('../assets/Fotos_Perfil/Dario.JPG'), 
     },
     {
     nombreCompleto: 'Evelyn Ramos',
@@ -52,7 +52,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: '',
-    img: require('../assets/Fotos_Perfil/Evelyn.jpg'), 
+    img: require('../assets/Fotos_Perfil/Evelyn.JPG'), 
     },
     {
     nombreCompleto: 'Gabriel Flores',
@@ -63,7 +63,7 @@ const teamData = [
     instagram: ' ',
     facebook: ' ',
     twitter: ' ',
-    img: require('../assets/Fotos_Perfil/Gabriel.jpg'), 
+    img: require('../assets/Fotos_Perfil/Gabriel.JPG'), 
     },
     {
     nombreCompleto: 'Guillermo Arostegui',
@@ -74,7 +74,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: '',
-    img: require('../assets/Fotos_Perfil/Guillermo.jpg'), 
+    img: require('../assets/Fotos_Perfil/Guillermo.JPG'), 
     },
     {
     nombreCompleto: 'Jonatan Calapeña',
@@ -85,7 +85,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: '',
-    img: require('../assets/Fotos_Perfil/Jonathan.jpg'), 
+    img: require('../assets/Fotos_Perfil/Jonathan.JPG'), 
     },
     {
     nombreCompleto: 'Nataniel Cazon',
@@ -96,7 +96,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: '',
-    img: require('../assets/Fotos_Perfil/Nataniel.jpg'), 
+    img: require('../assets/Fotos_Perfil/Nataniel.JPG'), 
     },
     {
     nombreCompleto: 'Ariel Vega',
@@ -107,7 +107,7 @@ const teamData = [
     instagram: '',
     facebook: '',
     twitter: '',
-    img: require('../assets/Fotos_Perfil/Vega.jpg'), 
+    img: require('../assets/Fotos_Perfil/Vega.JPG'), 
     },
     {
     nombreCompleto: 'Ezequiel Ozan',
