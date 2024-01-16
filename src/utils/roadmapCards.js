@@ -10,58 +10,58 @@ import foto_inicio from '../assets/Roadmap/foto_iniciojuego.png';
 export const cards = [
   {
     id: 1,        
-    title: "FINALIZACION IDEA INICIAL",
-    date: "MARZO 03, 2023",      
+    title: "Idea inicial",
+    date: "Marzo 03, 2023",      
     description: "La idea inicial finalizo con el conecpto del carnaval",
-    images: [foto_idea]   
+    images: [foto_inicio, foto_idea, foto_entrega]
   },
   {
-    id: 2,
-    image: foto_aprobacion,
-    title: "APROBACIÓN DEL PROYECTO",
-    date: "AGOSTO 02, 2023",
-    description: "Descripción"
+    id: 2,    
+    title: "Aprobación del proyecto",
+    date: "Agosto 02, 2023",
+    description: "Descripción",
+    images: [foto_aprobacion]
   },
   {
-    id: 3,
-    image: foto_inicio,
-    title: "INICIO DEL DESARROLLO",
-    date: "SEPTIEMBRE 14, 2023",
-    description: "Descripción"
+    id: 3,    
+    title: "Inicio del desarrollo",
+    date: "Septiembre 14, 2023",
+    description: "Descripción",
+    images: [foto_inicio]
   },
   {
-    id: 4,
-    image: eva_image,
-    title: "VIAJE AL EVA",
-    date: "SEPTIEMBRE 20, 2023",
-    description: "Descripción"
+    id: 4,    
+    title: "Viaje al eva",
+    date: "Septiembre 20, 2023",
+    description: "Descripción",
+    images: [eva_image]
   },
   {
-    id: 5,
-    image: foto_entrega,
-    title: "ENTREGA DE EQUIPAMIENTO",
-    date: "OCTUBRE 25, 2023",
-    description: "Descripción"
+    id: 5,    
+    title: "Entrega de equipamiento",
+    date: "Octubre 25, 2023",
+    description: "Descripción",
+    images: [foto_entrega]
   },
   {
-    id: 6,
-    image: foto_image,
-    title: "FOTOS PROFESIONALES",
-    date: "OCTUBRE 10, 2023",
-    description: "Descripción"
+    id: 6,    
+    title: "Fotos profesionales",
+    date: "Octubre 10, 2023",
+    description: "Descripción",
+    images: [foto_image]
   },
   {
-    id: 7,
-    image: foto_charla,
-    title: "CHARLA A INGRESANTES",
-    date: "OCTUBRE 27, 2023",
-    description: "Descripción"
+    id: 7,    
+    title: "Charla con estudiantes",
+    date: "Octubre 27, 2023",
+    description: "Descripción",
+    images: [foto_charla]
   },
   {
-    id: 8,
-    image: default_image,
+    id: 8,    
     title: "Continuara",
-    date: "FECHA",
-    description: "Descripción"
+    date: "Fecha",
+    description: "Descripción",
+    images: [default_image]
   }
 ]

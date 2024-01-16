@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.titulo-principal {
+  text-align: center;
+  padding: 40px 10px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0px rgba(0, 0, 0, 0.5);
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-family: 'Bungee', sans-serif;
+  line-height: 1.5;
+  font-size: min(15vw, 50px);
+}
