@@ -9,59 +9,59 @@ import foto_inicio from '../assets/Roadmap/foto_iniciojuego.png';
 
 export const cards = [
   {
-    id: 1,
-    image: foto_idea,    
-    title: "Finalizacion idea inicial",
+    id: 1,        
+    title: "Idea inicial",
     date: "Marzo 03, 2023",      
-    description: "Descripción"       
+    description: "La idea inicial finalizo con el conecpto del carnaval",
+    images: [foto_inicio, foto_idea, foto_entrega]
   },
   {
-    id: 2,
-    image: foto_aprobacion,
-    title: "Aprobación del ARN",
+    id: 2,    
+    title: "Aprobación del proyecto",
     date: "Agosto 02, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [foto_aprobacion]
   },
   {
-    id: 3,
-    image: foto_inicio,
-    title: "Inicio del desarrollo del VJ",
+    id: 3,    
+    title: "Inicio del desarrollo",
     date: "Septiembre 14, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [foto_inicio]
   },
   {
-    id: 4,
-    image: eva_image,
-    title: "Viaje al EVA",
+    id: 4,    
+    title: "Viaje al eva",
     date: "Septiembre 20, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [eva_image]
   },
   {
-    id: 5,
-    image: foto_entrega,
-    title: "Entrega de equipamientos",
+    id: 5,    
+    title: "Entrega de equipamiento",
     date: "Octubre 25, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [foto_entrega]
   },
   {
-    id: 6,
-    image: foto_image,
+    id: 6,    
     title: "Fotos profesionales",
     date: "Octubre 10, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [foto_image]
   },
   {
-    id: 7,
-    image: foto_charla,
-    title: "Charla estudiantes-egresados",
+    id: 7,    
+    title: "Charla con estudiantes",
     date: "Octubre 27, 2023",
-    description: "Descripción"
+    description: "Descripción",
+    images: [foto_charla]
   },
   {
-    id: 8,
-    image: default_image,
+    id: 8,    
     title: "Continuara",
     date: "Fecha",
-    description: "Descripción"
+    description: "Descripción",
+    images: [default_image]
   }
 ]

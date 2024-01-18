@@ -3,20 +3,6 @@
 }
 
 /**
-  TITULO
-*/
-.roadmap-title-container {
-  display: flex;
-  justify-content: center;
-}
-
-.roadmap-title {
-  text-align: center;
-  margin: 0 10px;
-  padding: 40px 0;
-}
-
-/**
   POSTES
 */
 .roadmap-content-container {
@@ -61,14 +47,14 @@
 /**
   MEDIA
 */
-@media (min-width: 361px) {
+@media (min-width: 480px) {
   .roadmap-content-poste-left,
   .roadmap-content-poste-right {
     width: 50px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 800px) {
   .roadmap-content-poste-left,
   .roadmap-content-poste-right {
     width: 70px;
