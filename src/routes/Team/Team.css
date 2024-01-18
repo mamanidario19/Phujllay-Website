@@ -1,83 +1,118 @@
-.team {
+/* TITULO */
+.team-title-container {
   display: flex;
   justify-content: center;
-  background-color: #f6f0d6;
-  width: 100%;
-  
+  margin: 20px;
 }
-.member-cards {
+
+.team-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.member-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-.member-card img{
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.equipo-image {
-  max-width: 90%; 
-  height: auto; 
-  border-radius: 5px; 
-  margin-bottom: 20px;
-}
-
-/* Estilo para los miembros del equipo */
 .member-card {
-  
-  background-color: #e6d8bd;
+  position: relative;
   width: 100%;
-  max-width: 400px;
-  border: 1px solid #000000;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
+  max-width: 350px;
+  border: 2px solid #000000;
 }
 
-
-.member-card h2 {
-  font-size: 24px;
-  color: #9d8878;
-  margin: 10px 0;
-}
-
-.member-card p {
-  font-size: 16px;
-  color: #9d8878;
-  margin: 10px 0;
+.image_perfil {
+  width: 100%;
+  height: 100%;
 }
 
 .contact-card {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .contact-card a {
-  padding: 5px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  padding: 3px 2px 1px;
+  margin: 2px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.member-details {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.members-section {
+  display: flex;
+  justify-content: center;
+}
+
+.member-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centra las tarjetas */
+}
+
+/* Consulta de medios para un maximo de 4 columnas en pantallas */
+@media screen and (min-width: 768px) {
+  .member-cards {
+    max-width: 1200px; /* Ajusta el ancho max*/
+    justify-content: space-between;
+    margin: 0 auto; /* Centra las tarjetas */
+  }
+}
+
+/* ANIMACIONES - TRANSICIONES */
+/* En carta */
+.member-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; /* duracion */
+}
+.member-details:hover {
+  color: #001aff;
+  transition: color 0.3s ease-in-out;
+}
+
+.filter-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; 
+}
+
+.filter-buttons-container button {
+  /* botones dentro de este contenedor */
+  background-color:  #71443F;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-  color: #9d8878;
-  transition: background-color 0.3s;
-  margin: 0 5px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.contact-card a:hover {
-  background-color: #d9d9d9;
-}
+.filter-buttons-container button:hover {
+  background-color:   #001aff;
 
-/*
-  IMAGE
-*/
-.image_perfil {
-  max-width: 50%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
 }
