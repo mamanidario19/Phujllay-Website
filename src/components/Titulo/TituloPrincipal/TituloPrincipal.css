@@ -6,9 +6,19 @@
   margin: 0;
   text-transform: uppercase;
   text-shadow: 0 2px 0px rgba(0, 0, 0, 0.5);
-  font-family: 'Arial', sans-serif;
-  font-size: 30px;
   font-family: 'Bungee', sans-serif;
   line-height: 1.5;
-  font-size: min(15vw, 50px);
+  font-size: min(15vw, 40px);
+}
+
+@media(min-width: 480px) {
+  .titulo-principal {
+    font-size: 50px;
+  }
+}
+
+@media(min-width: 800px) {
+  .titulo-principal {
+    font-size: 60px;
+  }
 }

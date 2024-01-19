@@ -2,9 +2,8 @@
 
 .roadmap-card {
   font-family: 'Luckiest Guy', cursive;
-  text-align: center;
-  width: 90%;
-  margin: 40px auto;
+  text-align: center;  
+  margin: 30px auto;
   transition-property: transform, background-color, box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
@@ -18,12 +17,13 @@
 }
 
 .roadmap-card-title {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .roadmap-card-title,
 .roadmap-card-date {
   padding: 0 10px;
+  margin: 20px 0;
   font-weight: 400;
   text-transform: uppercase;
   transition-property: transform, color, text-shadow;
@@ -32,7 +32,7 @@
 }
 
 .roadmap-card-date {
-  font-size: 20px
+  font-size: 15px;
 }
 
 /**
@@ -40,7 +40,7 @@
 */
 .roadmap-card:nth-child(odd) {
   background-color: #CE9965;
-  max-width: 700px;
+  width: min(90vw, 300px);
 }
 
 .roadmap-card:nth-child(odd):hover {
@@ -52,7 +52,7 @@
 */
 .roadmap-card:nth-child(even) {
   background-color: #8B4513;
-  max-width: 790px;
+  width: min(90vw, 350px);
 }
 
 .roadmap-card:nth-child(even):hover {
