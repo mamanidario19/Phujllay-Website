@@ -1,5 +1,4 @@
 import default_image from '../assets/Roadmap/image_default.jpg';
-import eva_image from '../assets/Roadmap/foto_eva.jpg';
 import foto_image from '../assets/Roadmap/foto_profesionales.jpg';
 import foto_charla from '../assets/Roadmap/foto_charlaestudiantes.png';
 import foto_aprobacion from '../assets/Roadmap/foto_aprobacionARN.png';
