@@ -31,34 +31,41 @@ export const cards = [
   },
   {
     id: 4,    
-    title: "Viaje al eva",
-    date: "Septiembre 20, 2023",
-    description: "Descripción",
-    images: [eva_image]
-  },
-  {
-    id: 5,    
     title: "Entrega de equipamiento",
     date: "Octubre 25, 2023",
     description: "Descripción",
     images: [foto_entrega]
   },
   {
-    id: 6,    
+    id: 5,    
     title: "Fotos profesionales",
     date: "Octubre 10, 2023",
     description: "Descripción",
     images: [foto_image]
   },
   {
-    id: 7,    
+    id: 6,    
     title: "Charla con estudiantes",
     date: "Octubre 27, 2023",
     description: "Descripción",
     images: [foto_charla]
   },
   {
+    id: 7,    
+    title: "Viaje a Humauaca",
+    date: "Diciembre 16, 2023",
+    description: "Descripción",
+    images: [default_image]
+  },
+  {
     id: 8,    
+    title: "Receso",
+    date: "Diciembre 23, 2023",
+    description: "Descripción",
+    images: [default_image]
+  },
+  {
+    id: 9,    
     title: "Continuara",
     date: "Fecha",
     description: "Descripción",

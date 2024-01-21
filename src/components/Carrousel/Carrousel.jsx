@@ -46,7 +46,7 @@ const Carrousel = ({ images }) => {
           {images.map((imageUrl, index) => (
             <img key={index}
               src={imageUrl}
-              alt={`Image-${index}`}
+              alt={`Slide-${index}`}
               id={`slide-${index}`} />
           ))}
         </div>
@@ -58,7 +58,7 @@ const Carrousel = ({ images }) => {
             <a key={index}
               href={`#slide-${index}`}
               className={index === activeIndex ? 'active' : ''}
-              onClick={() => handleNavClick(index)}></a>
+              onClick={() => handleNavClick(index)}> </a>
           ))}
         </div>
       </div>

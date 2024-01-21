@@ -3,11 +3,12 @@
 .roadmap-card {
   font-family: 'Luckiest Guy', cursive;
   text-align: center;
-  width: 90%;
-  margin: 40px auto;
+  margin: 15px auto;
   transition-property: transform, background-color, box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5vw;
 }
 
 .roadmap-card-link {
@@ -18,12 +19,13 @@
 }
 
 .roadmap-card-title {
-  font-size: 25px;
+  font-size: min(10vw, 25px);
 }
 
 .roadmap-card-title,
 .roadmap-card-date {
   padding: 0 10px;
+  margin: 15px 0;
   font-weight: 400;
   text-transform: uppercase;
   transition-property: transform, color, text-shadow;
@@ -32,7 +34,7 @@
 }
 
 .roadmap-card-date {
-  font-size: 20px
+  font-size: min(10vw, 15px);
 }
 
 /**
@@ -40,7 +42,7 @@
 */
 .roadmap-card:nth-child(odd) {
   background-color: #CE9965;
-  max-width: 700px;
+  width: min(90vw, 300px);
 }
 
 .roadmap-card:nth-child(odd):hover {
@@ -52,7 +54,7 @@
 */
 .roadmap-card:nth-child(even) {
   background-color: #8B4513;
-  max-width: 790px;
+  width: min(90vw, 350px);
 }
 
 .roadmap-card:nth-child(even):hover {
@@ -72,12 +74,12 @@
 .roadmap-card:nth-child(even):hover .roadmap-card-title,
 .roadmap-card:nth-child(odd):hover .roadmap-card-date,
 .roadmap-card:nth-child(even):hover .roadmap-card-date {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .roadmap-card:nth-child(odd):hover .roadmap-card-date,
 .roadmap-card:nth-child(even):hover .roadmap-card-date {
-  transform: scale(1.05);
+  transform: scale(1.1);
   color: yellow;
 }
 
@@ -89,12 +91,21 @@
     font-size: 30px;
   }
 
+  .roadmap-card-date {
+    font-size: 20px;
+  }
+
   .roadmap-card:nth-child(odd) {
-    width: 80%;
+    width: min(80vw, 450px);
   }
 
   .roadmap-card:nth-child(even) {
-    width: 90%;
+    width: min(90vw, 500px);
+  }
+
+  .roadmap-card-title,
+  .roadmap-card-date {
+    margin: 20px 0;
   }
 }
 
@@ -107,19 +118,49 @@
     font-size: 30px;
   }
 
+  .roadmap-card {
+    margin: 30px auto;
+  }
+
+  .roadmap-card:nth-child(odd) {
+    width: min(80vw, 700px);
+  }
+
+  .roadmap-card:nth-child(even) {
+    width: min(90vw, 800px);
+  }
+
+  .roadmap-card-title,
+  .roadmap-card-date {
+    margin: 25px 0;
+  }
+
   .roadmap-card:nth-child(odd) .roadmap-card-date {
     text-align: right;
-    margin-right: 40px;
+    margin-right: 5%;
   }
 
   .roadmap-card:nth-child(even) .roadmap-card-date {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 5%;
   }
 }
 
 @media (min-width: 1200px) {
   .roadmap-card-title {
     font-size: 50px;
+  }
+
+  .roadmap-card:nth-child(odd) {
+    width: 800px;
+  }
+
+  .roadmap-card:nth-child(even) {
+    width: 950px;
+  }
+
+  .roadmap-card-title,
+  .roadmap-card-date {
+    margin: 30px 0;
   }
 }
