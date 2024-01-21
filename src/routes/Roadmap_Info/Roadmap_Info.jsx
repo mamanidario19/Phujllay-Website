@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import './Roadmap_Info.css';
 import React from 'react';
 import { cards } from '../../utils/roadmapCards';
-import Carrousel from '../../components/Carrousel/Carrousel';
+import Carousel from '../../components/Carousel/Carousel';
 import TituloPrincipal from '../../components/Titulo/TituloPrincipal/TituloPrincipal';
 
 const Roadmap_Info = () => {
@@ -14,7 +14,7 @@ const Roadmap_Info = () => {
       <main className='roadmap-info'>
         <TituloPrincipal title={item.title} />
 
-        <Carrousel images={item.images} />
+        <Carousel images={item.images} />
 
         <article className='roadmap-info-description'>
           <p>{item.description}</p>

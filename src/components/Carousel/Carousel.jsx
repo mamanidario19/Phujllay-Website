@@ -1,7 +1,7 @@
-import './Carrousel.css';
+import './Carousel.css';
 import React, { useRef, useState } from 'react';
 
-const Carrousel = ({ images }) => {
+const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -38,7 +38,7 @@ const Carrousel = ({ images }) => {
   };
 
   return (
-    <section className='carrousel-container'>
+    <section className='carousel-container'>
       <div className='slider-wrapper'>
         <button className="carousel-prev" onClick={handlePrevClick}>&lt;</button>
 
@@ -66,4 +66,4 @@ const Carrousel = ({ images }) => {
   )
 }
 
-export default Carrousel;
+export default Carousel;
