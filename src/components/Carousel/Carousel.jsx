@@ -40,18 +40,20 @@ const Carousel = ({ images }) => {
   return (
     <section className='carousel-container'>
       <div className='slider-wrapper'>
-        <button className="carousel-prev" onClick={handlePrevClick}>&lt;</button>
+        <div className='slider-container'>
+          <button className="carousel-prev" onClick={handlePrevClick}>&lt;</button>
 
-        <div className="slider" ref={sliderRef}>
-          {images.map((imageUrl, index) => (
-            <img key={index}
-              src={imageUrl}
-              alt={`Slide-${index}`}
-              id={`slide-${index}`} />
-          ))}
+          <div className="slider" ref={sliderRef}>
+            {images.map((imageUrl, index) => (
+              <img key={index}
+                src={imageUrl}
+                alt={`Slide-${index}`}
+                id={`slide-${index}`} />
+            ))}
+          </div>
+
+          <button className="carousel-next" onClick={handleNextClick}>&gt;</button>
         </div>
-
-        <button className="carousel-next" onClick={handleNextClick}>&gt;</button>
 
         <div className='slider-nav'>
           {images.map((_, index) => (

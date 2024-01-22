@@ -14,7 +14,9 @@
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-family: 'Bungee', sans-serif;
   line-height: 1.25;
-  font-size: min(15vw, 40px);
+  font-size: min(12vw, 40px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media(min-width: 480px) {
