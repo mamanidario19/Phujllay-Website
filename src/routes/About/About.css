@@ -29,23 +29,6 @@ hr {
     border: 2px solid #F18523;
 }
 
-.line_left {
-    margin: 0 30px 0 0;
-}
-
-.line_right {
-    margin: 0 0 0 30px;
-}
-
-.title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 20px 0;
-}
-
 .features-section {
     width: 100%;
     margin: auto;
@@ -59,55 +42,14 @@ hr {
     margin-bottom: 50px;
 }
 
-.feature-box {
-    display: flex;
-    width: 95%;
-    margin: auto;
-    padding: 20px;
-    margin-top: 20px;
-    align-items: center;
+.feature {
+    margin-bottom: 20px;
+    /* Espaciado entre cada cuadro de características */
 }
 
-.feature-box:nth-child(even) .feature-content {
-    flex-direction: row-reverse;
-}
-
-.feature-box:nth-child(odd) .feature-content {
-    flex-direction: row;
-}
-
-.feature-box img {
-    width: 200px;
-    /* Ajusta el ancho de la imagen según sea necesario */
+.feature img {
+    width: 80%;
+    /* La imagen ocupa todo el ancho de su contenedor */
     height: auto;
-    /* Ajusta la altura de la imagen de forma automática */
-}
-
-.feature-content {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.feature-content img {
-    width: 200px;
-    /* Ajusta el ancho de la imagen según sea necesario */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma automática */
-}
-
-.feature-content p {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.feature-box:nth-child(even) {
-    background-color: #E6D8BD;
-    color: #9D8878;
-}
-
-.feature-box:nth-child(odd) {
-    background-color: #9D8878;
-    color: #F6F0D6;
+    /* Mantiene la proporción de la imagen */
 }
