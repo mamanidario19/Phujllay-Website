@@ -130,43 +130,43 @@ const Team = () => {
 
   return (
     <>
-    <div className="team-image-section">
-      <div className="title_box">
-        <hr className="line_left hr_roadmap" />
-        <h1 className="title">EQUIPO</h1>
-        <hr className="line_right hr_roadmap" />
-      </div>
+      <div className="team-image-section">
+        <div className="title_box">
+          <hr className="line_left hr_roadmap" />
+          <h1 className="title">EQUIPO</h1>
+          <hr className="line_right hr_roadmap" />
+        </div>
 
-      <div className="team">
-        <div className="equipo-image-container">
-        <img
-            className="equipo-image"
-            src={teamImage}
-            alt="Equipo"
-          />
-          <div className="equipo-description">
-            <p>¡Phujllay Team!</p>
+        <div className="team">
+          <div className="equipo-image-container">
+            <img
+              className="equipo-image"
+              src={teamImage}
+              alt="Equipo"
+            />
+            <div className="equipo-description">
+              <p>¡Phujllay Team!</p>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div className="members-section">
-        <div className="member-cards">
-          {teamMembers.map((member, index) => (
-            <div className="member-card" key={index}>
-              <img className="image_perfil" src={member.img} alt={member.nombreCompleto} />
-              <h2>{member.nombreCompleto}</h2>
-              <p>{member.rol}</p>
-              <p>{member.descripcion}</p>
-              <div className="contact-card">
-                <a href={member.linkedin}>LinkedIn</a>
-                <a href={`mailto:${member.email}`}>Email</a>
-                <a href={member.github}>GitHub</a>
+        <div className="members-section">
+          <div className="member-cards">
+            {teamMembers.map((member, index) => (
+              <div className="member-card" key={index}>
+                <img className="image_perfil" src={member.img} alt={member.nombreCompleto} />
+                <h2>{member.nombreCompleto}</h2>
+                <p>{member.rol}</p>
+                <p>{member.descripcion}</p>
+                <div className="contact-card">
+                  <a href={member.linkedin}>LinkedIn</a>
+                  <a href={`mailto:${member.email}`}>Email</a>
+                  <a href={member.github}>GitHub</a>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
 
       </div>
