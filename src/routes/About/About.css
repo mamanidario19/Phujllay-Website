@@ -60,8 +60,8 @@ body {
 .text-content {
     color: #000000;
     padding: 1%;
-
     /* Asegura que el padding no afecte el ancho total */
+    padding-left: 2%;
     flex: 0 0 50%;
     /* Evita que .text-content crezca y solo ocupe el espacio necesario */
     max-width: 50%;
