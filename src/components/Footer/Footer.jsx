@@ -1,11 +1,13 @@
 import React from 'react';
 //import {Footer} from 'flowbite-react';
 import { Link } from 'react-router-dom';
+import { Tooltip } from 'bootstrap';
 import './Footer.css';
 import gmail from '../../assets/SocialMediaFooter/logo_gmail.png';
 import insta from '../../assets/SocialMediaFooter/logo_instagram.png';
 import tiktok from '../../assets/SocialMediaFooter/logo_tiktok.png';
 import twitter from '../../assets/SocialMediaFooter/logo_twitter_x.png';
+import { OverlayTrigger } from 'react-bootstrap';
 
 const Footer = () => {
   return (
@@ -13,17 +15,27 @@ const Footer = () => {
       <div className='footer-logo'>
         <img src='' alt='LOGO'/>
       </div>
-      <div className='line'></div>
-      <div className='footer'>
 
+      <div className='footer'>
         <div className='footer-follow'>
-          <h4>Contact Us: </h4>
-          <div className='social-media'>
-            <a href=''><img src={gmail} alt='Gmail' /></a>
-            <a href=''><img src={insta} alt='Instagram' /></a>
-            <a href=''><img src={tiktok} alt='TikTok' /></a>
-            <a href=''><img src={twitter} alt='Twitter' /></a>
-          </div>
+          <div className='follow-media'>
+            <div>
+              <a href=''><img src={gmail} alt='Gmail' /></a>
+              <h4>Gmail</h4>
+            </div>
+            <div>
+              <a href=''><img src={insta} alt='Instagram' /></a>
+              <h4>Instagram</h4>
+            </div>
+            <div>
+              <a href=''><img src={tiktok} alt='TikTok' /></a>
+              <h4>TikTok</h4>
+            </div>
+            <div>
+              <a href=''><img src={twitter} alt='Twitter' /></a>
+              <h4>Twitter</h4>
+            </div>
+          </div>          
         </div>
         <div className='footer-nav-link'>
           <ul>
@@ -35,6 +47,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <div className='line'></div>
+
       <div className='other'>
         <div className='footer-legal'>
           <ul><li><Link>Politica de Privacidad</Link></li></ul>
