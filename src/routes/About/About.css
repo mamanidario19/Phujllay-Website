@@ -34,7 +34,8 @@ body {
 }
 
 .background-image {
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     /* Ajusta según tus necesidades */
     background-size: cover;
     background-position: center;
@@ -59,12 +60,12 @@ body {
 
 .text-content {
     color: #000000;
-    padding: 1%;
+    padding: 0.2%;
     /* Asegura que el padding no afecte el ancho total */
-    padding-left: 2%;
-    flex: 0 0 50%;
+    padding-left: 1%;
+    flex: 0 0 80%;
     /* Evita que .text-content crezca y solo ocupe el espacio necesario */
-    max-width: 50%;
+
 }
 
 .overlay-image {
@@ -82,4 +83,9 @@ body {
 hr {
     flex: 1;
     border: 2px solid #F18523;
+}
+
+h2 {
+    margin: 0px;
+    text-align: center;
 }
