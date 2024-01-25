@@ -6,12 +6,12 @@ body {
 .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     line-height: 1.8;
+    align-items: center;
 }
 
 .synopsis-section {
+    text-align: center;
     width: 60%;
     margin: auto;
     padding: 20px;
@@ -19,37 +19,67 @@ body {
     color: #C42E2F;
 }
 
-.title-box {
+.features-section {
+    background-color: #f6f0d6;
+    width: 80%;
+}
+
+.feature {
+    position: relative;
+    margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
+    /* Cambia a fila para que los elementos se alineen horizontalmente */
     align-items: center;
+}
+
+.background-image {
+    height: 200px;
+    /* Ajusta según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
+    border-color: rgb(140, 67, 15);
+    border-radius: 32px;
+    border-width: 2px;
+    flex: 1;
+}
+
+.content-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    /* Asegura que .content-container esté sobre .background-image */
+}
+
+.text-content {
+    color: #000000;
+    padding: 1%;
+
+    /* Asegura que el padding no afecte el ancho total */
+    flex: 0 0 50%;
+    /* Evita que .text-content crezca y solo ocupe el espacio necesario */
+    max-width: 50%;
+}
+
+.overlay-image {
+    width: 20%;
+    /* Ajusta según tus necesidades */
+    height: 85%;
+    align-self: flex-end;
+    /* Alinea .overlay-image a la parte inferior de .content-container */
+    margin: auto;
+    margin-right: 50px;
+    border-radius: 10px;
+    border-width: 2px;
 }
 
 hr {
     flex: 1;
     border: 2px solid #F18523;
-}
-
-.features-section {
-    width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    background-color: #f6f0d6;
-    padding-bottom: 20px;
-}
-
-.features-section h2 {
-    color: #F18523;
-    margin-bottom: 50px;
-}
-
-.feature {
-    margin-bottom: 20px;
-    /* Espaciado entre cada cuadro de características */
-}
-
-.feature img {
-    width: 80%;
-    /* La imagen ocupa todo el ancho de su contenedor */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
 }
