@@ -21,6 +21,7 @@ footer {
 
 .footer {
     margin: 2%;
+    width: 100%;
 }
 .footer-follow{
     display: flex;
@@ -40,7 +41,29 @@ footer {
     height: 30px;
     padding: 10px;
 }
-
+.footer-nav-link ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.other {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer-legal {
+    font-size: 13px;
+}
+.footer-legal ul {
+    list-style: none;
+}
 .footer-copyright {
     font-size: 13px;
+}
+.footer-faq {
+    font-size: 13px;
+}
+.footer-faq ul {
+    list-style: none;
 }
