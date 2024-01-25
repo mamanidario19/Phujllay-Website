@@ -20,45 +20,43 @@ body {
 }
 
 .features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f6f0d6;
-    width: 80%;
+
 }
 
 .feature {
+    width: 80%;
+    height: auto;
     position: relative;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    /* Cambia a fila para que los elementos se alineen horizontalmente */
-    align-items: center;
-}
-
-.background-image {
-    min-height: 200px;
-    height: auto;
-    /* Ajusta según tus necesidades */
-    background-size: cover;
-    background-position: center;
     border-style: solid;
     border-color: rgb(140, 67, 15);
     border-radius: 32px;
     border-width: 2px;
-    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Cambia a fila para que los elementos se alineen horizontalmente */
+    align-items: center;
 }
 
 .content-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row;
     z-index: 1;
     /* Asegura que .content-container esté sobre .background-image */
 }
 
 .text-content {
+    margin: 10px;
+    width: 50%;
     color: #000000;
     padding: 0.2%;
     /* Asegura que el padding no afecte el ancho total */
@@ -68,14 +66,13 @@ body {
 
 }
 
+.img-content {
+    margin: 15px;
+    width: 100%;
+}
+
 .overlay-image {
-    width: 20%;
-    /* Ajusta según tus necesidades */
-    height: 85%;
-    align-self: flex-end;
-    /* Alinea .overlay-image a la parte inferior de .content-container */
-    margin: auto;
-    margin-right: 50px;
+    width: 100%;
     border-radius: 10px;
     border-width: 2px;
 }
@@ -86,6 +83,7 @@ hr {
 }
 
 h2 {
-    margin: 0px;
+    position: relative;
+    left: 50px;
     text-align: center;
 }
