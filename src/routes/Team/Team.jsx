@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import "./Team.css";
 import {
   FaLinkedin,
-  FaEnvelope,
   FaGithub,
   FaInstagram,
   FaFacebook,
   FaTwitter,
 } from "react-icons/fa";
 import teamData from "../../utils/teamData.js";
+
+const SocialIcon = ({ href, icon: Icon }) => (
+  <div className="social-icon">
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <Icon className="icon" />
+    </a>
+  </div>
+);
 
 const TeamMember = ({ member }) => (
   <div className="member-container">
@@ -22,40 +29,11 @@ const TeamMember = ({ member }) => (
 
       {/* Muestra los enlaces de contacto */}
       <div className="contact-card">
-        {member.linkedin && (
-          <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-        )}
-        {member.email && (
-          <a
-            href={`mailto:${member.email}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaEnvelope />
-          </a>
-        )}
-        {member.github && (
-          <a href={member.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-        )}
-        {member.instagram && (
-          <a href={member.instagram} target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-        )}
-        {member.facebook && (
-          <a href={member.facebook} target="_blank" rel="noopener noreferrer">
-            <FaFacebook />
-          </a>
-        )}
-        {member.twitter && (
-          <a href={member.twitter} target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
-          </a>
-        )}
+        {member.linkedin && <SocialIcon href={member.linkedin} icon={FaLinkedin} />}
+        {member.github && <SocialIcon href={member.github} icon={FaGithub} />}
+        {member.instagram && <SocialIcon href={member.instagram} icon={FaInstagram} />}
+        {member.facebook && <SocialIcon href={member.facebook} icon={FaFacebook} />}
+        {member.twitter && <SocialIcon href={member.twitter} icon={FaTwitter} />}
       </div>
     </div>
     {/* Muestra los detalles del miembro */}
