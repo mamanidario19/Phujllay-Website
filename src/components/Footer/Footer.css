@@ -34,7 +34,7 @@ footer {
     transform: translate(0px, -70px);
     transition: transform 0.3s ease, opacity 2.0s ease;
 }
-.follow-media > div:hover h4 {
+.follow-media > div:hover h4 { /*cambiar*/
     opacity: 1;
     transform: translate(0px,-100px);
 }

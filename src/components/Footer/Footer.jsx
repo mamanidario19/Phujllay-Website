@@ -20,8 +20,8 @@ const Footer = () => {
         <div className='footer-follow'>
           <div className='follow-media'>
             <div>
-              <a href=''><img src={gmail} alt='Gmail' /></a>
-              <h4>Gmail</h4>
+              <a href=''><img src={gmail} alt='Gmail' /><span>Gmail</span></a>
+              
             </div>
             <div>
               <a href=''><img src={insta} alt='Instagram' /></a>
