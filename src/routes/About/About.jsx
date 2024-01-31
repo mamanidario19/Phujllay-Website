@@ -5,8 +5,13 @@ import culturaImg from '../../assets/noa.jpg';
 import carnavalImg from '../../assets/carnaval.jpg';
 import bgImg from '../../assets/about/bg001.png'
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+</style>
+
 const About = () => {
   return (
+
     <div className="about-container">
 
       <section className="synopsis-section">
