@@ -1,42 +1,24 @@
 import React from 'react';
-//import {Footer} from 'flowbite-react';
 import { Link } from 'react-router-dom';
-import { Tooltip } from 'bootstrap';
 import './Footer.css';
-import gmail from '../../assets/SocialMediaFooter/logo_gmail.png';
-import insta from '../../assets/SocialMediaFooter/logo_instagram.png';
-import tiktok from '../../assets/SocialMediaFooter/logo_tiktok.png';
-import twitter from '../../assets/SocialMediaFooter/logo_twitter_x.png';
-import { OverlayTrigger } from 'react-bootstrap';
+import {FaLinkedinIn,FaGithub,FaInstagram,FaFacebookF,FaGooglePlusG,FaTiktok} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <footer>
-      <div className='footer-logo'>
-        <img src='' alt='LOGO'/>
-      </div>
+      <div className='footer-logo'> <img src='' alt='LOGO'/> </div>
 
-      <div className='footer'>
-        <div className='footer-follow'>
-          <div className='follow-media'>
-            <div>
-              <a href=''><img src={gmail} alt='Gmail' /><span>Gmail</span></a>
-              
-            </div>
-            <div>
-              <a href=''><img src={insta} alt='Instagram' /></a>
-              <h4>Instagram</h4>
-            </div>
-            <div>
-              <a href=''><img src={tiktok} alt='TikTok' /></a>
-              <h4>TikTok</h4>
-            </div>
-            <div>
-              <a href=''><img src={twitter} alt='Twitter' /></a>
-              <h4>Twitter</h4>
-            </div>
-          </div>          
-        </div>
+      <div className='footer-media'>
+        <div className='footer-follow-media'>
+          <div className='media'> <a href=''> <FaGooglePlusG/> </a> <span>Gmail</span> </div>
+          <div className='media'> <a href=''> <FaInstagram/> </a> <span>Instagram</span> </div>
+          <div className='media'> <a href=''> <FaTiktok/> </a> <span>TikTok</span> </div>
+          <div className='media'> <a href=''> <FaXTwitter/> </a> <span>X</span> </div>
+          <div className='media'> <a href=''> <FaFacebookF/> </a> <span>Facebook</span> </div>
+          <div className='media'> <a href=''> <FaGithub/> </a> <span>GitHub</span> </div>
+          <div className='media'> <a href=''> <FaLinkedinIn/> </a> <span>LinkedIn</span> </div>
+        </div>          
         <div className='footer-nav-link'>
           <ul>
             <li><Link>Inicio</Link></li>
@@ -50,18 +32,11 @@ const Footer = () => {
 
       <div className='line'></div>
 
-      <div className='other'>
-        <div className='footer-legal'>
-          <ul><li><Link>Politica de Privacidad</Link></li></ul>
-        </div>
-        <div className='footer-copyright'>
-          <p> @{new Date().getFullYear()} AndinosGames. All right reserved </p>
-        </div>
-        <div className='footer-faq'>
-          <ul><li><Link>FAQ</Link></li></ul>
-        </div>
+      <div className='footer-other'>
+        <div className='other'> <ul><li><Link>Politica de Privacidad</Link></li></ul> </div>
+        <div className='other'> <p> @{new Date().getFullYear()} AndinosGames. All right reserved </p> </div>
+        <div className='other'> <ul><li><Link>FAQ</Link></li></ul> </div>
       </div>
-      
     </footer>
   )
 }
