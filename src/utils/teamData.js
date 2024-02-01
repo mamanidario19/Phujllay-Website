@@ -7,7 +7,7 @@ const teamData = [
     instagram: " ",
     facebook: " ",
     twitter: " ",
-    img: require("../assets/Fotos_Perfil/Adolfo.JPG"),
+    img: require("../assets/Fotos_Perfil/Adolfo.jpg"),
   },
   {
     nombreCompleto: "Guillermo Javier Arostegui",
@@ -17,7 +17,7 @@ const teamData = [
     instagram: "",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Guillermo.JPG"),
+    img: require("../assets/Fotos_Perfil/Guillermo.jpg"),
   },
   {
     nombreCompleto: "Jonatan Fernando Calapeña",
@@ -37,7 +37,7 @@ const teamData = [
     instagram: "",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Nataniel.JPG"),
+    img: require("../assets/Fotos_Perfil/Nataniel.jpg"),
   },
   {
     nombreCompleto: "Gabriel Flores",
@@ -52,11 +52,11 @@ const teamData = [
   {
     nombreCompleto: "Dario Santiago Mamani",
     roles: ["Productor", "Programador"],
-    linkedin: "",
-    github: "",
-    instagram: "",
+    linkedin: "https://www.linkedin.com/in/dario-mamani-gamedesigner/",
+    github: "https://github.com/mamanidario19",
+    instagram: "https://www.instagram.com/mamanidario.19/",
     facebook: "",
-    twitter: " ",
+    twitter: "",
     img: require("../assets/Fotos_Perfil/Dario.jpg"),
   },
   {
@@ -82,12 +82,12 @@ const teamData = [
   {
     nombreCompleto: "Evelyn Nahila Ramos",
     roles: ["Programador", "Sonidista"],
-    linkedin: "",
-    github: "dsad",
-    instagram: "",
+    linkedin: "https://www.linkedin.com/in/evelyn-ramos27/",
+    github: "https://github.com/Evelyn027",
+    instagram: "https://www.instagram.com/elyn.dev/",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Evelyn.JPG"),
+    img: require("../assets/Fotos_Perfil/Evelyn.jpg"),
   },
   {
     nombreCompleto: "Aylen Cecilia Rodriguez",
@@ -103,7 +103,7 @@ const teamData = [
   {
     nombreCompleto: "Ariel Alejandro Vega",
     roles: ["Director"],
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ariel-alejandro-vega/",
     github: "",
     instagram: "",
     facebook: "",
