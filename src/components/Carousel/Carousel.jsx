@@ -1,5 +1,9 @@
 import './Carousel.css';
 import React, { useRef, useState } from 'react';
+import { MdOutlineArrowBackIos } from "react-icons/md"
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+
+
 
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,7 +45,7 @@ const Carousel = ({ images }) => {
     <section className='carousel-container'>
       <div className='slider-wrapper'>
         <div className='slider-container'>
-          <button className="carousel-prev" onClick={handlePrevClick}>&lt;</button>
+          <button className="carousel-prev" onClick={handlePrevClick}><MdOutlineArrowBackIos /></button>
 
           <div className="slider" ref={sliderRef}>
             {images.map((imageUrl, index) => (
@@ -52,7 +56,7 @@ const Carousel = ({ images }) => {
             ))}
           </div>
 
-          <button className="carousel-next" onClick={handleNextClick}>&gt;</button>
+          <button className="carousel-next" onClick={handleNextClick}><MdOutlineArrowForwardIos /></button>
         </div>
 
         <div className='slider-nav'>

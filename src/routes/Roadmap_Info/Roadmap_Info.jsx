@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './Roadmap_Info.css';
 import React from 'react';
 import { cards } from '../../utils/roadmapCards';
 import Carousel from '../../components/Carousel/Carousel';
 import TituloPrincipal from '../../components/Titulo/TituloPrincipal/TituloPrincipal';
+import { LuArrowBigRight } from "react-icons/lu";
 
 const Roadmap_Info = () => {
   const params = useParams();
@@ -13,6 +14,10 @@ const Roadmap_Info = () => {
     <>
       <main className='roadmap-info'>
         <TituloPrincipal title={item.title} />
+
+        <div className='roadmap-return-button'>
+          <Link to={'/roadmap'} className='button-return'>Volver <LuArrowBigRight /></Link>
+        </div>
 
         <Carousel images={item.images} />
 

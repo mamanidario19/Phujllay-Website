@@ -23,5 +23,5 @@ export const FONT_SIZE = {
 };
 
 export const FONTS = {
-  main: 'Arial, sans-serif', // Fuente principal
+  main:"Titan One', sans-serif", // Fuente principal
 };
