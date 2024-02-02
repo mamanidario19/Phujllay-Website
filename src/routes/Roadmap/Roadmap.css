@@ -1,4 +1,5 @@
 .roadmap-container {
+  padding-top: 60px;
   background: linear-gradient(to top, #FFFFFF, #87CEEB);
 }
 
@@ -14,7 +15,7 @@
 
 .roadmap-content-cards {
   padding: 10px 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .roadmap-content-poste-left,
@@ -43,7 +44,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 /**
