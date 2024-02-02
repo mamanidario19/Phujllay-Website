@@ -1,6 +1,6 @@
 import './Team.css';
 import React from 'react';
-import adolfo from '../../assets/Fotos_Perfil/Adolfo.jpg'
+import adolfo from '../../assets/Fotos_Perfil/Adolfo.JPG'
 import agustin from '../../assets/Fotos_Perfil/Agustin.JPG'
 import aylen from '../../assets/Fotos_Perfil/Aylen.JPG'
 import dario from '../../assets/Fotos_Perfil/Dario.JPG'
