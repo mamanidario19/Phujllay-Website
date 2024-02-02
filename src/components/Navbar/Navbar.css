@@ -1,29 +1,27 @@
+/**
+  NAVBAR -------------------------
+*/
 .navbar {
   padding: 0;
-  margin: 0;  
+  margin: 0;
   background-color: #71443F;
 }
 
-.navbar-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.navbar-links > ul {
+.navbar-links>ul {
+  display: none;
   list-style: none;
-  display: block;
   padding: 0;
   margin: 0;
+  position: relative;
+  z-index: 3;
 }
 
-.navbar-links > ul > li {  
-  position: relative;
+.navbar-links>ul>li {
   width: 100vw;
   height: 75px;
 }
 
-.navbar-links > ul > li > a {
+.navbar-links>ul>li>a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,29 +29,77 @@
   text-transform: uppercase;
   color: #F6F0D6;
   font-weight: bold;
-  position: absolute;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
-.navbar-links > ul > li > a:hover {
+.navbar-links>ul>li>a:hover {
   background-color: black;
 }
 
+/**
+  MENU HAMBURGUESA -------------------------
+*/
+.button-container {
+  height: 75px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.burger-menu {
+  background: #71443F;
+  color: white;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition-property: background-color, transform, color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.burger-menu:hover {
+  background-color: #F6F0D6;
+  color: #71443F;
+  transform: scale(1.1);
+}
+
+.navbar-links>ul.show {
+  display: block;
+}
+
 @media (min-width: 640px) {
-  .navbar-links > ul {
+  .navbar-links>ul.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .navbar-links > ul > li {  
-    width: auto;    
+  .navbar-links>ul>li {
+    width: auto;
   }
 
-  .navbar-links > ul > li > a {
+  .navbar-links>ul>li>a {
     text-align: center;
     position: relative;
     padding: 10px 20px;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  /**
+    RUTA ACTIVA -------------------------
+  */
+  .nav-links li a.active {
+    background-color: #F24726;
   }
 }
