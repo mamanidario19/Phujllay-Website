@@ -32,8 +32,8 @@ const teamData = [
   {
     nombreCompleto: "Nataniel Cazon",
     roles: ["Programador", "Animador"],
-    linkedin: "",
-    github: "",
+    linkedin: "https://www.linkedin.com/in/nataniel-cazon-984540246/",
+    github: "https://github.com/NatanielCZN",
     instagram: "",
     facebook: "",
     twitter: "",
@@ -42,11 +42,11 @@ const teamData = [
   {
     nombreCompleto: "Gabriel Flores",
     roles: ["Sonidista", "Narrador"],
-    linkedin: " ",
-    github: " ",
-    instagram: " ",
-    facebook: " ",
-    twitter: " ",
+    linkedin: "https://www.linkedin.com/in/juan-gabriel-flores-997208158/",
+    github: "https://github.com/NozomiProjects",
+    instagram: "https://www.instagram.com/gabito2710/",
+    facebook: "",
+    twitter: "",
     img: require("../assets/Fotos_Perfil/Gabriel.jpg"),
   },
   {
