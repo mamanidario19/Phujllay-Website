@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Team.css";
+import TituloPrincipal from '../../components/Titulo/TituloPrincipal/TituloPrincipal';
 import {
   FaLinkedin,
   FaGithub,
@@ -38,7 +39,7 @@ const TeamMember = ({ member }) => (
     </div>
     {/* Muestra los detalles del miembro */}
     <div className="member-details">
-      <h2>{member.nombreCompleto}</h2>
+      <h3>{member.nombreCompleto}</h3>
       {/* Muestra multiples roles */}
       <p>{member.roles.join(", ")}</p>
     </div>
@@ -83,7 +84,8 @@ const Team = () => {
     <>
       {/* Seccion del titulo Team */}
       <div className="team-title-container">
-        <h1 className="team-title">TEAM</h1>
+        {/* <h1 className="team-title">TEAM</h1> */}
+        <TituloPrincipal title="equipo" />
       </div>
 
       {/* Botones de filtro */}
