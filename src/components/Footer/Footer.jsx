@@ -6,7 +6,7 @@ import {FaXTwitter} from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
       <div className='footer-logo'> <img src='' alt='LOGO'/> </div>
 
       <div className='footer-media'>

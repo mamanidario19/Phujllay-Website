@@ -1,10 +1,12 @@
-footer {
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #71443F;
     color: #fff;
+    font-family: 'Titan One', sans-serif;
 }
 
 .footer-logo { height: 50px; margin: 40px; font-size: 15px;}
@@ -17,20 +19,32 @@ footer {
     transform: translate(0px, -12px);
     transition: transform 0.1s ease, opacity 0.5s ease;
 }
-.footer-follow-media > div:hover span { opacity: 1; transform: translate(0px,0px);}
+.footer-follow-media > div:hover span { 
+    opacity: 1; transform: translate(0px,5px);
+}
+.media a:hover {
+    background-color: black;
+}
+
 .media {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .media a {
-    padding: 8px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    padding: 15px;
     margin-left: 15px;
     margin-right: 15px;
     font-size: 21px;
     color: white;
-    background-color: black;
-    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.375rem;
+}
+.media a > svg {
+    font-size: 24px;
 }
 
 .footer-nav-link ul {
