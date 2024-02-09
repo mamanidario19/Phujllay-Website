@@ -22,9 +22,9 @@ const teamData = [
   {
     nombreCompleto: "Jonatan Fernando Calapeña",
     roles: ["Sonidista", "Programador"],
-    linkedin: "",
-    github: "",
-    instagram: "",
+    linkedin: "https://www.linkedin.com/in/jonah-galahad/",
+    github: "https://github.com/JonahGalahad",
+    instagram: "https://www.instagram.com/jonah_galahad/",
     facebook: "",
     twitter: "",
     img: require("../assets/Fotos_Perfil/Jonatan.jpg"),
