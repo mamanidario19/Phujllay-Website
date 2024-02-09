@@ -1,6 +1,5 @@
 import './Home.css';
 import React from 'react';
-//import backimg from '../../assets/Phujllay.png';
 import Parallax from '../../components/Parallax/Parallax.jsx';
 
 const Home = () => {
