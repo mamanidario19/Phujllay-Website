@@ -1,0 +1,45 @@
+.roadmap-info {  
+  padding-top: 60px;
+  margin: auto;
+  max-width: 1200px;
+  font-family: 'Titan One', sans-serif;  
+}
+
+.roadmap-info-description {  
+  padding: 20px 10px 40px;
+  color: white;  
+}
+
+.roadmap-info-description > p {
+  font-size: min(7vw, 20px);
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+/**
+  BUTTON RETURN ------------------
+*/
+.roadmap-return-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px 10px 0;
+}
+
+.button-return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;  
+  text-transform: uppercase;
+  font-size: min(7vw, 24px);
+  color: white;
+  transition-property: transform, text-decoration;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;  
+}
+
+.button-return:hover {
+  transform: translateX(-5px);
+  text-decoration: underline;
+}

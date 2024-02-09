@@ -1,89 +1,144 @@
-.team {
+/* TITULO */
+.team-title-container {
   display: flex;
   justify-content: center;
-  background-color: #f6f0d6;
+  margin: 20px;
+}
+
+.team-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-card {
+  position: relative;
+  /* width: 100%; */
+  width: 330px;
+  max-width: 100%;
+  height: 350px;
+  border: 2px solid #000000;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image_perfil {
   width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+/* ------TARJETA DE ICONOS----- */
+
+.contact-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contact-card a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: width 0.3s, height 0.3s;
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social-icon {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
   
 }
+
+.social-icon .icon {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  transition: transform 0.3s ;
+}
+
+.social-icon:hover .icon {
+  transform: scale(1.3);
+}
+
+.social-icon:hover .contact-card a {
+  width: 70px;
+  height: 70px;
+}
+
+/* ------INFORMACION DE PERSONAS----- */
+.member-details {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.members-section {
+  display: flex;
+  justify-content: center;
+}
+
 .member-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
 }
-/* Estilos para la imagen del equipo */
-.equipo-image-container {
-  text-align: center; 
-  padding: 5% ;
-}
 
-.equipo-image {
-  max-width: 90%; 
-  height: auto; 
-  border-radius: 5px; 
-  margin-bottom: 20px;
-}
-
-.equipo-description {
-  font-size: 18px;
-  color: #9d8878;
-  margin-top: 10px;
-}
-
-/* Estilo para los miembros del equipo */
-.member-card {
-  
-  background-color: #e6d8bd;
-  width: 100%;
-  max-width: 400px;
-  border: 1px solid #d9d9d9;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.member-card img {
-  max-width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.member-card h2 {
-  font-size: 24px;
-  color: #9d8878;
-  margin: 10px 0;
-}
-
-.member-card p {
-  font-size: 16px;
-  color: #9d8878;
-  margin: 10px 0;
-}
-
-.contact-card {
+/*--- FILTRO BUTTONS ----*/
+.filter-buttons-container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px; 
+  
 }
 
-.contact-card a {
-  padding: 5px 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
+.filter-buttons-container button {
+  /* botones dentro de este contenedor */
+  background-color:  #71443F;
+  border: none;
+  color: white;
+  padding: 0.625rem 1.25rem;;
+  text-align: center;
   text-decoration: none;
-  color: #9d8878;
-  transition: background-color 0.3s;
-  margin: 0 5px;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.contact-card a:hover {
-  background-color: #d9d9d9;
+.filter-buttons-container button:hover {
+  background-color:   #000000;
+
 }
 
-/*
-  IMAGE
-*/
-.image_perfil {
-  width: 300px;
-  height: 200px;
+
+/* ------MEDIA QUERY----- */
+@media screen and (min-width: 768px) {
+  .member-cards {
+    max-width: 1200px; /* Ajusta el ancho max*/
+    justify-content: space-evenly;
+    margin: 0 auto; 
+  }
 }
+
