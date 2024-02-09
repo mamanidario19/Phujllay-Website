@@ -7,7 +7,7 @@ const teamData = [
     instagram: " ",
     facebook: " ",
     twitter: " ",
-    img: require("../assets/Fotos_Perfil/Adolfo.jpg"),
+    img: require("../assets/Fotos_Perfil/Adolfo.JPG"),
   },
   {
     nombreCompleto: "Guillermo Javier Arostegui",
@@ -17,7 +17,7 @@ const teamData = [
     instagram: "",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Guillermo.jpg"),
+    img: require("../assets/Fotos_Perfil/Guillermo.JPG"),
   },
   {
     nombreCompleto: "Jonatan Fernando Calapeña",
@@ -37,7 +37,7 @@ const teamData = [
     instagram: "",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Nataniel.jpg"),
+    img: require("../assets/Fotos_Perfil/Nataniel.JPG"),
   },
   {
     nombreCompleto: "Gabriel Flores",
@@ -47,7 +47,7 @@ const teamData = [
     instagram: "https://www.instagram.com/gabito2710/",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Gabriel.jpg"),
+    img: require("../assets/Fotos_Perfil/Gabriel.JPG"),
   },
   {
     nombreCompleto: "Dario Santiago Mamani",
@@ -57,7 +57,7 @@ const teamData = [
     instagram: "https://www.instagram.com/mamanidario.19/",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Dario.jpg"),
+    img: require("../assets/Fotos_Perfil/Dario.JPG"),
   },
   {
     nombreCompleto: "Ezequiel Ozan",
@@ -77,7 +77,7 @@ const teamData = [
     instagram: " ",
     facebook: " ",
     twitter: " ",
-    img: require("../assets/Fotos_Perfil/Agustin.jpg"),
+    img: require("../assets/Fotos_Perfil/Agustin.JPG"),
   },
   {
     nombreCompleto: "Evelyn Nahila Ramos",
@@ -87,7 +87,7 @@ const teamData = [
     instagram: "https://www.instagram.com/elyn.dev/",
     facebook: "",
     twitter: "",
-    img: require("../assets/Fotos_Perfil/Evelyn.jpg"),
+    img: require("../assets/Fotos_Perfil/Evelyn.JPG"),
   },
   {
     nombreCompleto: "Aylen Cecilia Rodriguez",
@@ -97,7 +97,7 @@ const teamData = [
     instagram: " ",
     facebook: " ",
     twitter: " ",
-    img: require("../assets/Fotos_Perfil/Aylen.jpg"),
+    img: require("../assets/Fotos_Perfil/Aylen.JPG"),
   },
 
   {
