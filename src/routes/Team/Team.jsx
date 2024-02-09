@@ -109,6 +109,7 @@ const Team = () => {
             <TeamMember key={index} member={member} />
           ))}
         </div>
+
       </div>
     </>
   );
