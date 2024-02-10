@@ -1,172 +1,117 @@
-import './Team.css';
-import React from 'react';
-import adolfo from '../../assets/Fotos_Perfil/Adolfo.JPG'
-import agustin from '../../assets/Fotos_Perfil/Agustin.JPG'
-import aylen from '../../assets/Fotos_Perfil/Aylen.JPG'
-import dario from '../../assets/Fotos_Perfil/Dario.JPG'
-import evelyn from '../../assets/Fotos_Perfil/Evelyn.JPG'
-import gabriel from '../../assets/Fotos_Perfil/Gabriel.JPG'
-import guillermo from '../../assets/Fotos_Perfil/Guillermo.JPG'
-import jonathan from '../../assets/Fotos_Perfil/Jonathan.JPG'
-import nataniel from '../../assets/Fotos_Perfil/Nataniel.JPG'
-import ariel from '../../assets/Fotos_Perfil/Vega.JPG'
-import ezequiel from '../../assets/Fotos_Perfil/Ezequiel.png'
-import teamImage from '../../assets/Fotos_Perfil/Team.JPG'
+import React, { useState } from "react";
+import "./Team.css";
+import TituloPrincipal from '../../components/Titulo/TituloPrincipal/TituloPrincipal';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+} from "react-icons/fa";
+import teamData from "../../utils/teamData.js";
+
+const SocialIcon = ({ href, icon: Icon }) => (
+  <div className="social-icon">
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <Icon className="icon" />
+    </a>
+  </div>
+);
+
+const TeamMember = ({ member }) => (
+  <div className="member-container">
+    <div className="member-card">
+      {/* Muestra la imagen del miembro */}
+      <img
+        className="image_perfil"
+        src={member.img}
+        alt={member.nombreCompleto}
+      />
+
+      {/* Muestra los enlaces de contacto */}
+      <div className="contact-card">
+        {member.linkedin && <SocialIcon href={member.linkedin} icon={FaLinkedin} />}
+        {member.github && <SocialIcon href={member.github} icon={FaGithub} />}
+        {member.instagram && <SocialIcon href={member.instagram} icon={FaInstagram} />}
+        {member.facebook && <SocialIcon href={member.facebook} icon={FaFacebook} />}
+        {member.twitter && <SocialIcon href={member.twitter} icon={FaTwitter} />}
+      </div>
+    </div>
+    {/* Muestra los detalles del miembro */}
+    <div className="member-details">
+      <h3>{member.nombreCompleto}</h3>
+      {/* Muestra multiples roles */}
+      <p>{member.roles.join(", ")}</p>
+    </div>
+  </div>
+);
 
 const Team = () => {
+  // Estado para almacenar el rol seleccionado
+  const [selectedRoles, setSelectedRoles] = useState([]);
 
-  const teamMembers = [
-    {
-      img: adolfo,
-      nombreCompleto: 'Adolfo Agostini',
-      rol: 'Animador',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: agustin,
-      nombreCompleto: 'Agustin Ponce',
-      rol: 'Sonidista',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: aylen,
-      nombreCompleto: 'Aylén Rodriguez',
-      rol: 'Animadora',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: dario,
-      nombreCompleto: 'Dario Mamani',
-      rol: 'Programador',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: evelyn,
-      nombreCompleto: 'Evelyn Ramos',
-      rol: 'Programadora',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: gabriel,
-      nombreCompleto: 'Gabriel Flores',
-      rol: 'Sonidista',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: guillermo,
-      nombreCompleto: 'Guillermo Arostegui',
-      rol: 'Sonidista',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: jonathan,
-      nombreCompleto: 'Jonatan Calapeña',
-      rol: 'Sonidista',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: nataniel,
-      nombreCompleto: 'Nataniel Cazon',
-      rol: 'Programador',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: ariel,
-      nombreCompleto: 'Ariel Vega',
-      rol: 'Programador',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
-    {
-      img: ezequiel,
-      nombreCompleto: 'Ezequiel Ozan',
-      rol: 'Sonido',
-      descripcion: 'Descripcion',
-      linkedin: '',
-      email: '',
-      github: '',
-    },
+  // Funcion para manejar la seleccion de roles
+  const handleRoleSelect = (role) => {
+    // Si se ha seleccionado "Todos"
+    if (role === null) {
+      // Mostrar a todos los miembros
+      setSelectedRoles([]);
+      return;
+    }
 
-  ];
+    // Si el rol ya esta seleccionado
+    if (selectedRoles.includes(role)) {
+      // Y Si se hace clic nuevamente en un rol seleccionado, no hacemos nada
+      return;
+    }
 
+    // Si no hay roles seleccionados, rol actual "Todos"
+    setSelectedRoles([role]);
+  };
 
+  // Filtra los datos del equipo segun el rol seleccionado
+  const filteredTeamData =
+    selectedRoles.length > 0
+      ? teamData.filter((member) =>
+          selectedRoles.some((selectedRole) =>
+            member.roles.includes(selectedRole)
+          )
+        )
+      : teamData;
 
-
-
-
-
-
-
-
-
+  //Renderizar el componente Team
   return (
     <>
-      <div className="team-image-section">
-        <div className="title_box">
-          <hr className="line_left hr_roadmap" />
-          <h1 className="title">EQUIPO</h1>
-          <hr className="line_right hr_roadmap" />
-        </div>
 
-        <div className="team">
-          <div className="equipo-image-container">
-            <img
-              className="equipo-image"
-              src={teamImage}
-              alt="Equipo"
-            />
-            <div className="equipo-description">
-              <p>¡Phujllay Team!</p>
-            </div>
-          </div>
-        </div>
+      {/* Seccion del titulo Team */}
+      <div className="team-title-container">
+        {/* <h1 className="team-title">TEAM</h1> */}
+        <TituloPrincipal title="equipo" />
+      </div>
 
+      {/* Botones de filtro */}
+      <div className="filter-buttons-container">
+        <button onClick={() => handleRoleSelect(null)}>Todos</button>
+        <button onClick={() => handleRoleSelect("Narrador")}>Narradores</button>
+        <button onClick={() => handleRoleSelect("Animador")}>Animadores</button>
+        <button onClick={() => handleRoleSelect("Sonidista")}>
+          Sonidistas
+        </button>
+        <button onClick={() => handleRoleSelect("Programador")}>
+          Programadores
+        </button>
+        <button onClick={() => handleRoleSelect("Productor")}>Productor</button>
+        <button onClick={() => handleRoleSelect("Director")}>Director</button>
+      </div>
 
-        <div className="members-section">
-          <div className="member-cards">
-            {teamMembers.map((member, index) => (
-              <div className="member-card" key={index}>
-                <img className="image_perfil" src={member.img} alt={member.nombreCompleto} />
-                <h2>{member.nombreCompleto}</h2>
-                <p>{member.rol}</p>
-                <p>{member.descripcion}</p>
-                <div className="contact-card">
-                  <a href={member.linkedin}>LinkedIn</a>
-                  <a href={`mailto:${member.email}`}>Email</a>
-                  <a href={member.github}>GitHub</a>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Seccion de tarjetas */}
+      <div className="members-section">
+        <div className="member-cards">
+          {/* Busca o mapea y renderiza tarjetas de los miembros*/}
+          {filteredTeamData.map((member, index) => (
+            <TeamMember key={index} member={member} />
+          ))}
+
         </div>
 
       </div>
