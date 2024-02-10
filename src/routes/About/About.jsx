@@ -42,8 +42,7 @@ const About = () => {
           <div className="content-container">
             <div className="text-content">
               <h2>Feature 2</h2>
-              <p>Descripción de la segunda característica.quasi voluptates voluptatum exercitationem qui natus culpa vitae. Provident?Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia. Eligendi aspernatur error eaque fuga velit eos minus placeat!
-              </p>
+              <p>Descripción de la segunda característica.quasi voluptates voluptatum exercitationem qui natus culpa vitae. Provident?Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia.  </p>
             </div>
             <figure className="img-content">
               <img className="overlay-image" src={culturaImg} alt="Cultura" />

@@ -30,12 +30,11 @@ body {
 
 .feature {
     width: 80%;
-    height: 80%;
+    height: 100%;
     height: auto;
     /* position: relative; */
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
     border-style: solid;
     border-color: rgb(140, 67, 15);
     border-radius: 32px;
@@ -43,7 +42,6 @@ body {
     /* background-repeat: no-repeat; */
     background-size: cover;
     /* Cambia a fila para que los elementos se alineen horizontalmente */
-    /* align-items: center; */
     box-shadow: 0px 0px 10px #000000;
 }
 
@@ -53,7 +51,8 @@ body {
     /* align-items: center; */
     flex-direction: row;
     z-index: 1;
-    /* Asegura que .content-container esté sobre .background-image */
+    /* Asegura que .content-container esté sobre .background-image 
+    margin-bottom: 50px; */
 }
 
 .text-content {
@@ -81,8 +80,7 @@ body {
     max-width: 300px;
     /* Opcional: establece un límite máximo de ancho */
     max-height: 300px;
-    min-width: 150px;
-    min-height: 100px;
+
     border-style: solid;
     border-color: rgb(140, 67, 15);
     box-shadow: 0px 0px 25px #000000;
@@ -96,4 +94,43 @@ hr {
 h2 {
     left: 50px;
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        min-height: 550px;
+    }
+
+    .text-content {
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor */
+        text-align: center;
+        /* Centra el texto horizontalmente */
+        margin-left: 10px;
+        margin-right: 10px;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .img-content {
+        display: flex;
+        /* Habilita flexbox para centrar la imagen */
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+        margin: 10px 0;
+        /* Ajusta los márgenes */
+    }
+
+    .overlay-image {
+        max-height: 100%;
+        /* Limita la altura al contenedor */
+        object-fit: contain;
+        /* Ajusta el comportamiento de la imagen */
+    }
+
+
 }
