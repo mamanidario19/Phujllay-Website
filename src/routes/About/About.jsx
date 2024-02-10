@@ -4,6 +4,7 @@ import aventuraImg from '../../assets/concept-art.png';
 import culturaImg from '../../assets/noa.jpg';
 import carnavalImg from '../../assets/carnaval.jpg';
 import bgImg from '../../assets/about/bg001.png'
+import { Link } from 'react-router-dom';
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
@@ -24,44 +25,48 @@ const About = () => {
       <section className="features-section">
 
         <div className="feature" style={{ backgroundImage: `url(${bgImg})` }}>
-          <div className="content-container">
-            <div className="text-content">
-              <h2>Feature 1</h2>
-              <p>Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia. Eligendi aspernatur error eaque fuga velit eos minus placeat!
-
-              </p>
+          <Link to="/feature-1" style={{ textDecoration: 'none' }}>
+            <div className="content-container">
+              <div className="text-content">
+                <h2>Feature 1</h2>
+                <p>Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia. Eligendi aspernatur error eaque fuga velit eos minus placeat!
+                </p>
+              </div>
+              <figure className="img-content">
+                <img className="overlay-image" src={aventuraImg} alt="Aventura" />
+              </figure>
             </div>
-            <figure className="img-content">
-              <img className="overlay-image" src={aventuraImg} alt="Aventura" />
-            </figure>
-
-          </div>
+          </Link>
         </div>
 
         <div className="feature" style={{ backgroundImage: `url(${bgImg})` }}>
-          <div className="content-container">
-            <div className="text-content">
-              <h2>Feature 2</h2>
-              <p>Descripción de la segunda característica.quasi voluptates voluptatum exercitationem qui natus culpa vitae. Provident?Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia.  </p>
+          <Link to="/feature-2" style={{ textDecoration: 'none' }}>
+            <div className="content-container">
+              <div className="text-content">
+                <h2>Feature 2</h2>
+                <p>Descripción de la segunda característica.quasi voluptates voluptatum exercitationem qui natus culpa vitae. Provident?Descripción de la primera característica. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, explicabo ipsum alias aut inventore accusamus, commodi molestiae distinctio ex magni quia.  </p>
+              </div>
+              <figure className="img-content">
+                <img className="overlay-image" src={culturaImg} alt="Cultura" />
+              </figure>
             </div>
-            <figure className="img-content">
-              <img className="overlay-image" src={culturaImg} alt="Cultura" />
-            </figure>
-
-          </div>
+          </Link>
         </div>
 
         <div className="feature" style={{ backgroundImage: `url(${bgImg})` }}>
-          <div className="content-container">
-            <div className="text-content">
-              <h2>Feature 3</h2>
-              <p>Descripción de la tercera característica.</p>
+          <Link to="/feature-3" style={{ textDecoration: 'none' }}>
+            <div className="content-container">
+              <div className="text-content">
+                <h2>Feature 3</h2>
+                <p>Descripción de la tercera característica. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eos dolor totam cum ea magni, consequuntur recusandae debitis odit, at cumque ullam corrupti nesciunt. Expedita atque vel fugiat eaque quae.</p>
+              </div>
+              <figure className="img-content">
+                <img className="overlay-image" src={carnavalImg} alt="Carnaval" />
+              </figure>
             </div>
-            <figure className="img-content">
-              <img className="overlay-image" src={carnavalImg} alt="Carnaval" />
-            </figure>
-          </div>
+          </Link>
         </div>
+
       </section>
     </div>
   );
