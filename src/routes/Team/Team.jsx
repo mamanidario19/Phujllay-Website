@@ -82,6 +82,7 @@ const Team = () => {
   //Renderizar el componente Team
   return (
     <>
+
       {/* Seccion del titulo Team */}
       <div className="team-title-container">
         {/* <h1 className="team-title">TEAM</h1> */}
@@ -110,6 +111,7 @@ const Team = () => {
           {filteredTeamData.map((member, index) => (
             <TeamMember key={index} member={member} />
           ))}
+
         </div>
 
       </div>
