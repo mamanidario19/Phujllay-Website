@@ -22,11 +22,11 @@ const Footer = () => {
         </div>
         <div className='footer-nav-link'>
           <ul>
-            <li><Link>Inicio</Link></li>
-            <li><Link>Juego</Link></li>
-            <li><Link>Desarrollo</Link></li>
-            <li><Link>Equipo</Link></li>
-            <li><Link>Roadmap</Link></li>
+            <li><Link to="/" className='footer-nav'>Inicio</Link></li>
+            <li><Link to="/" className='footer-nav'>Juego</Link></li>
+            <li><Link to="/development" className='footer-nav'>Desarrollo</Link></li>
+            <li><Link to="/team" className='footer-nav'>Equipo</Link></li>
+            <li><Link to="/roadmap" className='footer-nav'>Roadmap</Link></li>
           </ul>
         </div>
       </div>
@@ -41,4 +41,5 @@ const Footer = () => {
     </footer>
   )
 }
+
 export default Footer;

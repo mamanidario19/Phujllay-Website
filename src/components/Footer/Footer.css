@@ -1,16 +1,17 @@
+/** FOOTER */
 .footer {
     background: linear-gradient(to bottom, #1C1614, black);
     color: #fff;
     font-family: 'Titan One', sans-serif;
 }
-
+/** LOGO */
 .footer-logo {
     text-align: center;
     height: 50px;
     margin: 40px;
     font-size: 15px;
 }
-
+/** SOCIAL MEDIA */ 
 .footer-media { width: 100%;}
 .footer-follow-media { 
     display: flex; 
@@ -50,7 +51,7 @@
 .media a > svg {
     font-size: 24px;
 }
-
+/** LINKS FOOTER */
 .footer-nav-link,
 .footer-nav-link ul{
     display: flex;
@@ -70,12 +71,12 @@
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
 }
-
+/** LINEA DE DIVISION */
 .footer > .line {
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.35);
 }
-
+/** POLITICA/PREGUTAS */
 .footer-other {
     display: flex;
     justify-content: space-around;

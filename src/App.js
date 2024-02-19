@@ -8,10 +8,12 @@ import Roadmap_Info from './routes/Roadmap_Info/Roadmap_Info';
 import Team from './routes/Team/Team';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import ScrollToUp from './components/ScrollToUp';
 
 function App() {
   return (
     <div className="app">
+    <ScrollToUp/>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
