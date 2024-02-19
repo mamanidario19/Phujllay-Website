@@ -1,31 +1,35 @@
-/** FOOTER */
+/**---------- FOOTER ----------*/
 .footer {
     background: linear-gradient(to bottom, #1C1614, black);
     color: #fff;
     font-family: 'Titan One', sans-serif;
 }
-/** LOGO */
+
+/**---------- LOGO ----------*/
 .footer-logo {
     text-align: center;
     height: 50px;
     margin: 40px;
     font-size: 15px;
 }
-/** SOCIAL MEDIA */ 
+
+/**---------- SOCIAL MEDIA ----------*/
 .footer-media { width: 100%;}
 .footer-follow-media { 
     display: flex; 
     justify-content: center;
 }
+/** tooltip */
 .footer-follow-media span{
     font-size: 1rem;
     opacity: 0;
-    transform: translate(0px, -12px);
+    transform: translate(0px, -3px);
     transition: transform 0.1s ease, opacity 0.5s ease;
 }
 .footer-follow-media > div:hover span { 
     opacity: 1; transform: translate(0px,5px);
 }
+/** image */
 .media a:hover {
     background-color: white;
     color: black;
@@ -51,7 +55,8 @@
 .media a > svg {
     font-size: 24px;
 }
-/** LINKS FOOTER */
+
+/**---------- LINKS FOOTER ----------*/
 .footer-nav-link,
 .footer-nav-link ul{
     display: flex;
@@ -59,6 +64,7 @@
 }
 .footer-nav-link {
     justify-content: center;
+    padding-top: 1%;
 }
 .footer-nav-link ul {
     list-style: none;
@@ -71,12 +77,14 @@
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
 }
-/** LINEA DE DIVISION */
+
+/**---------- LINEA DE DIVISION ----------*/
 .footer > .line {
     width: 80%;
     border: 1px solid rgba(255, 255, 255, 0.35);
 }
-/** POLITICA/PREGUTAS */
+
+/**---------- POLITICA/PREGUTAS ----------*/
 .footer-other {
     display: flex;
     justify-content: space-around;
