@@ -1,28 +1,38 @@
+/**---------- FOOTER ----------*/
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #71443F;
+    background: linear-gradient(to bottom, #1C1614, black);
     color: #fff;
     font-family: 'Titan One', sans-serif;
 }
 
-.footer-logo { height: 50px; margin: 40px; font-size: 15px;}
+/**---------- LOGO ----------*/
+.footer-logo {
+    text-align: center;
+    height: 50px;
+    margin: 40px;
+    font-size: 15px;
+}
 
+/**---------- SOCIAL MEDIA ----------*/
 .footer-media { width: 100%;}
-.footer-follow-media { display: flex; justify-content: center;}
+.footer-follow-media { 
+    display: flex; 
+    justify-content: center;
+}
+/** tooltip */
 .footer-follow-media span{
     font-size: 1rem;
     opacity: 0;
-    transform: translate(0px, -12px);
+    transform: translate(0px, -3px);
     transition: transform 0.1s ease, opacity 0.5s ease;
 }
 .footer-follow-media > div:hover span { 
     opacity: 1; transform: translate(0px,5px);
 }
+/** image */
 .media a:hover {
-    background-color: black;
+    background-color: white;
+    color: black;
 }
 
 .media {
@@ -39,34 +49,42 @@
     margin-right: 15px;
     font-size: 21px;
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0.375rem;
 }
 .media a > svg {
     font-size: 24px;
 }
 
+/**---------- LINKS FOOTER ----------*/
+.footer-nav-link,
+.footer-nav-link ul{
+    display: flex;
+    align-items: center;
+}
+.footer-nav-link {
+    justify-content: center;
+    padding-top: 1%;
+}
 .footer-nav-link ul {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 80%;
     padding-top: 5px;
 }
 .footer-nav-link li a {
     text-decoration: none;
-    color: antiquewhite;
+    color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
 }
 
-.line {
+/**---------- LINEA DE DIVISION ----------*/
+.footer > .line {
     width: 80%;
-    height: 1px;
-    background-color: black;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
+/**---------- POLITICA/PREGUTAS ----------*/
 .footer-other {
     display: flex;
     justify-content: space-around;
