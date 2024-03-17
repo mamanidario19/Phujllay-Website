@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FaLinkedinIn, FaGithub, FaInstagram, FaFacebookF, FaGooglePlusG, FaTiktok } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-
 const Footer = () => {
   return (
     <footer className='footer'>
@@ -15,7 +13,6 @@ const Footer = () => {
           <div className='media'> <a href=''> <FaGooglePlusG /> </a> <span>Gmail</span> </div>
           <div className='media'> <a href=''> <FaInstagram /> </a> <span>Instagram</span> </div>
           <div className='media'> <a href=''> <FaTiktok /> </a> <span>TikTok</span> </div>
-          <div className='media'> <a href=''> <FaXTwitter /> </a> <span>X</span> </div>
           <div className='media'> <a href=''> <FaFacebookF /> </a> <span>Facebook</span> </div>
           <div className='media'> <a href=''> <FaGithub /> </a> <span>GitHub</span> </div>
           <div className='media'> <a href=''> <FaLinkedinIn /> </a> <span>LinkedIn</span> </div>
@@ -34,9 +31,15 @@ const Footer = () => {
       <hr className='line' />
 
       <div className='footer-other'>
-        <div className='other'> <ul><li><Link>Politica de Privacidad</Link></li></ul> </div>
-        <div className='other'> <p> @{new Date().getFullYear()} AndinosGames. All right reserved </p> </div>
-        <div className='other'> <ul><li><Link>FAQ</Link></li></ul> </div>
+        <div className='footer-other-links'>
+          <ul>
+            <li><div className='footer-other-link-item'> <Link>Politica de Privacidad</Link></div></li>
+            <li><div className='footer-other-link-item'> <Link>FAQ</Link></div></li>
+          </ul>
+        </div>
+        
+        <div className='footer-other-creator'> <p> @{new Date().getFullYear()} AndinosGames. All right reserved </p> </div>
+        
       </div>
     </footer>
   )
